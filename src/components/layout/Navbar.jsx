@@ -1,17 +1,20 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { HiOutlineMenuAlt3, HiOutlineX } from "react-icons/hi";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   const navItems = [
-    { label: "Home", href: "/" },
-    { label: "Activities", href: "/activities" },
-    { label: "Packages", href: "/#packages" },
-    { label: "About Us", href: "/#about" },
-    { label: "Contact Us", href: "/contact" },
+    { label: "Home", to: "/", type: "route" },
+    { label: "Activities", to: "/activities", type: "route" },
+    { label: "Packages", to: "/#packages", type: "anchor" },
+    { label: "About Us", to: "/#about", type: "anchor" },
+    { label: "Contact Us", to: "/contact", type: "route" },
   ];
+
+  const navLinkClass = ({ isActive }) =>
+    `transition hover:text-amber-300 ${isActive ? "text-amber-300" : ""}`;
 
   return (
     <header className="absolute inset-x-0 top-0 z-50">
@@ -28,12 +31,18 @@ export default function Navbar() {
           <ul className="flex items-center gap-7 text-sm font-medium text-white">
             {navItems.map((item) => (
               <li key={item.label}>
-                <a
-                  href={item.href}
-                  className="transition hover:text-amber-300"
-                >
-                  {item.label}
-                </a>
+                {item.type === "route" ? (
+                  <NavLink to={item.to} className={navLinkClass}>
+                    {item.label}
+                  </NavLink>
+                ) : (
+                  <a
+                    href={item.to}
+                    className="transition hover:text-amber-300"
+                  >
+                    {item.label}
+                  </a>
+                )}
               </li>
             ))}
           </ul>
@@ -60,13 +69,27 @@ export default function Navbar() {
           <ul className="space-y-4">
             {navItems.map((item) => (
               <li key={item.label}>
-                <a
-                  href={item.href}
-                  onClick={() => setOpen(false)}
-                  className="block text-sm font-medium transition hover:text-amber-300"
-                >
-                  {item.label}
-                </a>
+                {item.type === "route" ? (
+                  <NavLink
+                    to={item.to}
+                    onClick={() => setOpen(false)}
+                    className={({ isActive }) =>
+                      `block text-sm font-medium transition hover:text-amber-300 ${
+                        isActive ? "text-amber-300" : ""
+                      }`
+                    }
+                  >
+                    {item.label}
+                  </NavLink>
+                ) : (
+                  <a
+                    href={item.to}
+                    onClick={() => setOpen(false)}
+                    className="block text-sm font-medium transition hover:text-amber-300"
+                  >
+                    {item.label}
+                  </a>
+                )}
               </li>
             ))}
           </ul>

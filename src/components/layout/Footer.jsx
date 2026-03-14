@@ -9,7 +9,7 @@ export default function Footer() {
         </p>
 
         <div className="flex items-center gap-4">
-          <a href="#" className="text-zinc-400 transition hover:text-white">
+          <a href="https://www.facebook.com/people/Masuku-Adventure-Safaris/61584398296602/?rdid=Jc62tpWijU5snyOU&share_url=https%253A%252F%252Fwww.facebook.com%252Fshare%252F1KNhW68JYz%252F" target="_blank" className="text-zinc-400 transition hover:text-white">
             <FaFacebookF />
           </a>
           <a href="#" className="text-zinc-400 transition hover:text-white">
