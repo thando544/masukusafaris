@@ -9,7 +9,7 @@ export default function Navbar() {
     { label: "Home", to: "/", type: "route" },
     { label: "Activities", to: "/activities", type: "route" },
     { label: "Packages", to: "/#packages", type: "anchor" },
-    { label: "About Us", to: "/#about", type: "anchor" },
+    { label: "About Us", to: "/about", type: "anchor" },
     { label: "Contact Us", to: "/contact", type: "route" },
   ];
 

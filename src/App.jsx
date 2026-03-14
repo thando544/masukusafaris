@@ -5,6 +5,7 @@ import ActivityDetails from "./pages/ActivityDetails";
 import PackageDetails from "./pages/PackageDetails";
 import Contact from "./pages/Contact";
 import BookingPage from "./pages/BookingPage";
+import About from "./pages/About";
 
 export default function App() {
   return (
@@ -12,6 +13,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/activities" element={<Activities />} />
+        <Route path="/about" element={<About />} />
         <Route path="/activities/:slug" element={<ActivityDetails />} />
         <Route path="/packages/:slug" element={<PackageDetails />} />
         <Route path="/contact" element={<Contact />} />

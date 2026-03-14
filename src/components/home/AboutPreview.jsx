@@ -53,7 +53,7 @@ export default function AboutPreview() {
         <div className="mt-14 grid gap-6 lg:grid-cols-2">
           <div className="relative overflow-hidden rounded-2xl">
             <img
-              src="/img/mac/donald.jpg"
+              src="/images/walking.jpeg"
               alt="Masuku Adventure team"
               className="h-105 w-full object-cover"
             />
@@ -67,7 +67,7 @@ export default function AboutPreview() {
 
           <div className="overflow-hidden rounded-2xl">
             <img
-              src="/img/mac/game_drive.jpg"
+              src="./images/maki.jpg"
               alt="Game drive"
               className="h-105 w-full object-cover"
             />
