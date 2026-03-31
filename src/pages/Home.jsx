@@ -5,7 +5,6 @@ import AboutPreview from "../components/home/AboutPreview";
 import ActivitiesPreview from "../components/home/ActivitiesPreview";
 import StatsSection from "../components/home/StatsSection";
 import PackagesPreview from "../components/home/PackagesPreview";
-import TransfersPreview from "../components/home/TransfersPreview";
 import CTASection from "../components/home/CTASection";
 
 export default function Home() {
@@ -18,7 +17,6 @@ export default function Home() {
         <ActivitiesPreview />
         <StatsSection />
         <PackagesPreview />
-        <TransfersPreview />
         <CTASection />
       </main>
       <Footer />
