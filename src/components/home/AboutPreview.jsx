@@ -16,9 +16,9 @@ export default function AboutPreview() {
             <p>
               At Masuku Adventure Safaris, we transform your journey into an
               extraordinary adventure with our carefully curated experiences.
-              Whether you're marveling at the stunning Victoria Falls,
-              embarking on a thrilling Chobe safari, or exploring the cultural
-              richness of Livingstone, our expert team ensures every moment is
+              Whether you're marveling at the stunning Victoria Falls, embarking
+              on a thrilling Chobe safari, or exploring the cultural richness of
+              Livingstone, our expert team ensures every moment is
               unforgettable.
             </p>
             <p>
@@ -45,7 +45,8 @@ export default function AboutPreview() {
                 className="font-medium text-zinc-900 underline"
               >
                 SafariBookings
-              </a>.
+              </a>
+              .
             </p>
           </div>
         </div>
@@ -53,7 +54,7 @@ export default function AboutPreview() {
         <div className="mt-14 grid gap-6 lg:grid-cols-2">
           <div className="relative overflow-hidden rounded-2xl">
             <img
-              src="/images/walking.jpeg"
+              src="https://res.cloudinary.com/dnqjax5ut/image/upload/q_auto/f_auto/v1775329740/IMG-20260404-WA0024_mdcqi2.jpg"
               alt="Masuku Adventure team"
               className="h-105 w-full object-cover"
             />
@@ -67,7 +68,7 @@ export default function AboutPreview() {
 
           <div className="overflow-hidden rounded-2xl">
             <img
-              src="./images/maki.jpg"
+              src="https://res.cloudinary.com/dnqjax5ut/image/upload/q_auto/f_auto/v1775295641/masukusafaris.com_kqya0z.jpg"
               alt="Game drive"
               className="h-105 w-full object-cover"
             />
