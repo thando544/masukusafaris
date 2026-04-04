@@ -1,75 +1,114 @@
 import { Link } from "react-router-dom";
-import packages from "../../data/packages";
+import { activities } from "../../data/homeData";
 
-export default function PackagesPreview() {
+export default function ActivitiesPreview() {
   return (
-    <section id="packages" className="bg-white py-20 md:py-28">
+    <section className="bg-white py-20 md:py-28">
       <div className="mx-auto max-w-7xl px-4 md:px-6 lg:px-8">
-        <div className="mb-10">
-          <p className="mb-3 text-sm uppercase tracking-[0.25em] text-amber-700">
-            Your Stay
-          </p>
-          <h2 className="text-3xl font-semibold text-zinc-900 md:text-5xl">
-            Packages
-          </h2>
-        </div>
+        <div className="mb-12 flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
+          <div className="max-w-3xl">
+            <p className="mb-3 text-xs font-semibold uppercase tracking-[0.28em] text-amber-700">
+              Signature Experiences
+            </p>
+            <h2 className="text-3xl font-semibold tracking-tight text-zinc-950 md:text-5xl">
+              Activities & Adventures
+            </h2>
+            <p className="mt-4 text-base leading-8 text-zinc-600 md:text-lg">
+              Discover unforgettable wildlife encounters, scenic adventures, and
+              guided experiences designed to make your journey through Victoria
+              Falls and beyond truly memorable.
+            </p>
+          </div>
 
-        <div className="grid gap-6 lg:grid-cols-12">
-          <div className="lg:col-span-8">
+          <div>
             <Link
-              to={`/packages/${packages[0].slug}`}
-              className="group block overflow-hidden rounded-2xl"
+              to="/activities"
+              className="inline-flex items-center justify-center rounded-xl border border-zinc-300 bg-white px-5 py-3 text-sm font-semibold text-zinc-900 transition hover:border-zinc-900"
             >
-              <img
-                src={packages[0].image}
-                alt={packages[0].title}
-                className="h-125 w-full object-cover transition duration-500 group-hover:scale-105"
-              />
-              <div className="pt-5">
-                <h3 className="text-xl font-semibold text-zinc-900">
-                  {packages[0].title}
-                </h3>
-                <p className="mt-2 text-base text-zinc-700">
-                  {packages[0].priceLabel}{" "}
-                  <span className="text-sm text-zinc-500">{packages[0].unit}</span>
-                </p>
-              </div>
+              View All Activities
             </Link>
           </div>
+        </div>
 
-          <div className="grid gap-6 md:grid-cols-2 lg:col-span-4 lg:grid-cols-1">
-            {packages.slice(1).map((pkg) => (
-              <Link
-                key={pkg.id}
-                to={`/packages/${pkg.slug}`}
-                className="group block overflow-hidden rounded-2xl"
-              >
-                <div className="relative">
-                  {pkg.popular && (
-                    <span className="absolute left-4 top-4 z-10 rounded-full bg-amber-500 px-3 py-1 text-xs font-semibold text-black">
-                      Popular
-                    </span>
-                  )}
+        <div className="grid gap-8 sm:grid-cols-2 xl:grid-cols-3">
+          {activities.slice(0, 6).map((activity) => (
+            <Link
+              key={activity.id}
+              to={`/activities/${activity.slug}`}
+              className="group flex h-full flex-col overflow-hidden rounded-[30px] border border-zinc-200 bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-2xl"
+            >
+              <div className="relative overflow-hidden">
+                <img
+                  src={activity.image}
+                  alt={activity.title}
+                  className="h-65 w-full object-cover transition duration-700 group-hover:scale-105 md:h-75"
+                />
+                <div className="absolute inset-0 bg-linear-to-t from-black/60 via-black/10 to-transparent" />
 
-                  <img
-                    src={pkg.image}
-                    alt={pkg.title}
-                    className="h-60 w-full object-cover transition duration-500 group-hover:scale-105"
-                  />
+                <div className="absolute left-5 top-5">
+                  <span className="rounded-full bg-white/90 px-3 py-1 text-[11px] font-bold uppercase tracking-[0.18em] text-zinc-900">
+                    Experience
+                  </span>
                 </div>
 
-                <div className="pt-4">
-                  <h3 className="text-lg font-semibold text-zinc-900">
-                    {pkg.title}
+                <div className="absolute bottom-5 left-5 right-5">
+                  <h3 className="text-2xl font-semibold leading-tight text-white">
+                    {activity.title}
                   </h3>
-                  <p className="mt-2 text-base text-zinc-700">
-                    {pkg.priceLabel}{" "}
-                    <span className="text-sm text-zinc-500">{pkg.unit}</span>
-                  </p>
                 </div>
-              </Link>
-            ))}
-          </div>
+              </div>
+
+              <div className="flex flex-1 flex-col p-6">
+                <p className="text-sm font-medium text-amber-700">
+                  {activity.unit
+                    ? `From ${activity.price} / ${activity.unit}`
+                    : "Tailored experience"}
+                </p>
+
+                <p className="mt-4 line-clamp-3 text-sm leading-7 text-zinc-600 md:text-base">
+                  Experience one of the region’s standout adventures with
+                  comfort, guidance, and memorable moments built into every
+                  journey.
+                </p>
+
+                <div className="mt-6 grid gap-4 rounded-2xl bg-zinc-50 p-4 sm:grid-cols-2">
+                  <div>
+                    <p className="text-xs uppercase tracking-[0.18em] text-zinc-500">
+                      Category
+                    </p>
+                    <p className="mt-2 text-sm font-medium text-zinc-900 capitalize">
+                      Adventure
+                    </p>
+                  </div>
+
+                  <div>
+                    <p className="text-xs uppercase tracking-[0.18em] text-zinc-500">
+                      Ideal For
+                    </p>
+                    <p className="mt-2 text-sm font-medium text-zinc-900">
+                      Couples, groups & explorers
+                    </p>
+                  </div>
+                </div>
+
+                <div className="mt-6 flex items-end justify-between gap-4 border-t border-zinc-200 pt-6">
+                  <div>
+                    <p className="text-2xl font-semibold text-zinc-950">
+                      {activity.price}
+                    </p>
+                    <p className="text-sm text-zinc-500">{activity.unit}</p>
+                  </div>
+
+                  <span className="inline-flex items-center gap-2 text-sm font-semibold text-zinc-950">
+                    View Details
+                    <span className="transition group-hover:translate-x-1">
+                      →
+                    </span>
+                  </span>
+                </div>
+              </div>
+            </Link>
+          ))}
         </div>
       </div>
     </section>
