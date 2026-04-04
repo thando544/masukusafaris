@@ -1,30 +1,43 @@
-export default function HeroSection() {
+export default function CustomHero() {
   return (
-    <section className="relative min-h-screen overflow-hidden">
+    <section className="relative min-h-[70vh] overflow-hidden">
       <div
         className="absolute inset-0 bg-cover bg-center"
-        style={{ backgroundImage: "url('/img/gallery/4.jpg')" }}
+        style={{
+          backgroundImage:
+            "url('https://res.cloudinary.com/dnqjax5ut/image/upload/q_auto/f_auto/v1775294136/masukusafaris.com8_kjougq.jpg')",
+        }}
       />
-      <div className="absolute inset-0 bg-black/45" />
-
-      <div className="relative mx-auto flex min-h-screen max-w-7xl items-center px-4 md:px-6 lg:px-8">
-        <div className="max-w-4xl pt-24">
-          <p className="mb-5 max-w-3xl text-sm uppercase tracking-[0.25em] text-white/80 md:text-base">
-            Unforgettable adventures, seamless transfers, and personalized
-            experiences crafted just for you.
+      <div className="absolute inset-0 bg-black/55" />
+      <div className="relative mx-auto flex min-h-[70vh] max-w-7xl items-center px-4 md:px-6 lg:px-8">
+        <div className="max-w-3xl text-white">
+          <p className="mb-4 text-xs font-semibold uppercase tracking-[0.28em] text-amber-300">
+            Signature Safari Experience
           </p>
 
-          <h1 className="max-w-4xl text-5xl font-semibold leading-tight text-white md:text-6xl lg:text-7xl">
-            Discover the Wonders of Africa
+          <h1 className="text-4xl font-semibold leading-tight md:text-6xl">
+            Explore Africa Like Never Before
           </h1>
 
-          <div className="mt-10">
+          <p className="mt-6 text-base leading-8 text-white/85 md:text-lg">
+            Discover unforgettable journeys across Zimbabwe and beyond —
+            from wildlife safaris to breathtaking landscapes and iconic
+            destinations.
+          </p>
+
+          <div className="mt-8 flex gap-4">
             <a
-              href="#about"
-              className="inline-flex items-center gap-3 text-sm font-medium text-white transition hover:text-amber-300"
+              href="/packages"
+              className="rounded-xl bg-amber-500 px-6 py-3 font-semibold text-black hover:bg-amber-400"
             >
-              Scroll
-              <span className="h-px w-16 bg-white/70" />
+              View Packages
+            </a>
+
+            <a
+              href="/contact"
+              className="rounded-xl border border-white px-6 py-3 font-semibold text-white hover:bg-white hover:text-black"
+            >
+              Contact Us
             </a>
           </div>
         </div>
