@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function CustomHero() {
   return (
     <section className="relative min-h-[90vh] overflow-hidden">
@@ -29,19 +31,17 @@ export default function CustomHero() {
           </p>
 
           <div className="mt-8 flex gap-4">
-            <a
-              href="/packages"
-              className="rounded-xl bg-amber-500 px-6 py-3 font-semibold text-black hover:bg-amber-400"
+         <Link
+              to="/packages"
+              className="inline-flex items-center justify-center rounded-xl bg-amber-500 px-6 py-4 text-sm font-semibold text-black transition hover:bg-amber-400"
             >
-              View Packages
-            </a>
 
-            <a
+            <Link
               href="/contact"
               className="rounded-xl border border-white px-6 py-3 font-semibold text-white hover:bg-white hover:text-black"
             >
               Contact Us
-            </a>
+            </Link>
           </div>
         </div>
 
