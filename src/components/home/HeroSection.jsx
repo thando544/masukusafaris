@@ -1,6 +1,6 @@
 export default function CustomHero() {
   return (
-    <section className="relative min-h-[70vh] overflow-hidden">
+    <section className="relative min-h-[90vh] overflow-hidden">
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{
