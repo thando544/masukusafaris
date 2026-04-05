@@ -15,7 +15,7 @@ export default function CustomHero() {
             Signature Safari Experience
           </p>
 
-          <p className="mt-6 text-base leading-8 text-white/85 md:text-lg mt-8">
+          <p className="mt-6 text-base leading-8 text-white/85 md:text-lg mt-[2em]">
             Discover unforgettable journeys across Zimbabwe and beyond —
             from wildlife safaris to breathtaking landscapes and iconic
             destinations.
