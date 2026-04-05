@@ -369,11 +369,9 @@ const packages = [
     priceLabel: "Custom Quote",
     unit: "per person",
 
-    // 🔥 UPDATED COVER IMAGE (REAL SAFARI IMAGE)
     image:
       "https://res.cloudinary.com/dnqjax5ut/image/upload/v1774980180/WhatsApp_Image_2026-03-30_at_18.55.08_1_e0pbis.jpg",
 
-    // 🔥 UPDATED GALLERY (REAL IMAGES)
     gallery: [
       "https://res.cloudinary.com/dnqjax5ut/image/upload/v1774980180/WhatsApp_Image_2026-03-30_at_18.55.08_1_e0pbis.jpg",
       "https://res.cloudinary.com/dnqjax5ut/image/upload/v1774980179/WhatsApp_Image_2026-03-30_at_18.55.08_3_gwnkrm.jpg",
@@ -633,18 +631,14 @@ const packages = [
   },
   {
     id: 6,
-    slug: "13-days-namibia-botswana-victoria-falls",
+    slug: "14-days-namibia-botswana-victoria-falls",
     title: "13 Days Namibia, Botswana & Victoria Falls Safari",
     subtitle: "Sossusvlei, Etosha, Chobe & Victoria Falls Explorer",
     price: 0,
     priceLabel: "Custom Quote",
     unit: "per person",
-
-    // ✅ COVER IMAGE (image 8 as requested)
     image:
       "https://res.cloudinary.com/dnqjax5ut/image/upload/q_auto/f_auto/v1775294136/masukusafaris.com8_kjougq.jpg",
-
-    // ✅ GALLERY
     gallery: [
       "https://res.cloudinary.com/dnqjax5ut/image/upload/q_auto/f_auto/v1775294137/masukusafaris.com_2_r7pimp.jpg",
       "https://res.cloudinary.com/dnqjax5ut/image/upload/q_auto/f_auto/v1775294137/masukusafaris.com1_i3luir.jpg",
