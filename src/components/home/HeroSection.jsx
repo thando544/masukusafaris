@@ -10,14 +10,14 @@ export default function CustomHero() {
       />
       <div className="absolute inset-0 bg-black/55" />
 
-      <div className="relative mx-auto flex min-h-[70vh] max-w-7xl items-center px-4 md:px-6 lg:px-8">
+      {/* KEY CHANGE HERE */}
+      <div className="relative mx-auto flex min-h-[90vh] max-w-7xl items-end px-4 md:px-6 lg:px-8 pb-10 md:pb-16">
+        
         <div className="max-w-3xl text-white">
-          
           <p className="mb-4 text-xs font-semibold uppercase tracking-[0.28em] text-amber-300">
             Signature Safari Experience
           </p>
 
-          {/* NEW H1 */}
           <h1 className="mt-2 mb-6 text-4xl font-extrabold leading-tight md:text-5xl lg:text-6xl">
             Masuku Safaris
           </h1>
@@ -43,8 +43,8 @@ export default function CustomHero() {
               Contact Us
             </a>
           </div>
-
         </div>
+
       </div>
     </section>
   );
