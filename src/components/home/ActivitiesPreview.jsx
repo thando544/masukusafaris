@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { activities } from "../../data/homeData";
+import activities from "../../data/activities";
 
 export default function ActivitiesPreview() {
   return (
@@ -47,7 +47,7 @@ export default function ActivitiesPreview() {
 
                 <div className="absolute left-5 top-5">
                   <span className="rounded-full bg-white/90 px-3 py-1 text-[11px] font-bold uppercase tracking-[0.18em] text-zinc-900">
-                    Experience
+                    {activity.category?.replace("-", " ") || "Experience"}
                   </span>
                 </div>
 
@@ -60,33 +60,29 @@ export default function ActivitiesPreview() {
 
               <div className="flex flex-1 flex-col p-6">
                 <p className="text-sm font-medium text-amber-700">
-                  {activity.unit
-                    ? `From ${activity.price} / ${activity.unit}`
-                    : "Tailored experience"}
+                  {activity.priceLabel || "Custom Quote"}
                 </p>
 
                 <p className="mt-4 line-clamp-3 text-sm leading-7 text-zinc-600 md:text-base">
-                  Experience one of the region’s standout adventures with
-                  comfort, guidance, and memorable moments built into every
-                  journey.
+                  {activity.shortDescription}
                 </p>
 
                 <div className="mt-6 grid gap-4 rounded-2xl bg-zinc-50 p-4 sm:grid-cols-2">
                   <div>
                     <p className="text-xs uppercase tracking-[0.18em] text-zinc-500">
-                      Category
+                      Location
                     </p>
-                    <p className="mt-2 text-sm font-medium text-zinc-900 capitalize">
-                      Adventure
+                    <p className="mt-2 text-sm font-medium text-zinc-900">
+                      {activity.location || "Victoria Falls"}
                     </p>
                   </div>
 
                   <div>
                     <p className="text-xs uppercase tracking-[0.18em] text-zinc-500">
-                      Ideal For
+                      Duration
                     </p>
                     <p className="mt-2 text-sm font-medium text-zinc-900">
-                      Couples, groups & explorers
+                      {activity.duration || "Flexible"}
                     </p>
                   </div>
                 </div>
@@ -94,7 +90,7 @@ export default function ActivitiesPreview() {
                 <div className="mt-6 flex items-end justify-between gap-4 border-t border-zinc-200 pt-6">
                   <div>
                     <p className="text-2xl font-semibold text-zinc-950">
-                      {activity.price}
+                      {activity.priceLabel || "Custom Quote"}
                     </p>
                     <p className="text-sm text-zinc-500">{activity.unit}</p>
                   </div>
