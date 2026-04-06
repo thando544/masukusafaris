@@ -17,7 +17,6 @@ export default function Home() {
         <AboutPreview />
         <ActivitiesPreview />
         <PackagesPreview />
-        <TransfersPreview />
         <CTASection />
       </main>
 
