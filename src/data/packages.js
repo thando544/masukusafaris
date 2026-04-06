@@ -632,18 +632,14 @@ const packages = [
   },
   {
     id: 6,
-    slug: "13-days-namibia-botswana-victoria-falls",
+    slug: "14-days-namibia-botswana-victoria-falls",
     title: "13 Days Namibia, Botswana & Victoria Falls Safari",
     subtitle: "Sossusvlei, Etosha, Chobe & Victoria Falls Explorer",
     price: 0,
     priceLabel: "Custom Quote",
     unit: "per person",
-
-    // ✅ COVER IMAGE (image 8 as requested)
     image:
       "https://res.cloudinary.com/dnqjax5ut/image/upload/q_auto/f_auto/v1775294136/masukusafaris.com8_kjougq.jpg",
-
-    // ✅ GALLERY
     gallery: [
       "https://res.cloudinary.com/dnqjax5ut/image/upload/q_auto/f_auto/v1775294137/masukusafaris.com_2_r7pimp.jpg",
       "https://res.cloudinary.com/dnqjax5ut/image/upload/q_auto/f_auto/v1775294137/masukusafaris.com1_i3luir.jpg",
