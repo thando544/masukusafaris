@@ -107,10 +107,10 @@ export default function Contact() {
                       Reach out for bookings, custom itineraries, and general travel help.
                     </p>
                     <a
-                      href="tel:+263000000000"
+                      href="tel:  +263782856955"
                       className="mt-4 inline-block font-medium text-zinc-900 underline underline-offset-4"
                     >
-                      +263 00 000 0000
+                     +263 78 285 6955
                     </a>
                   </div>
 
@@ -153,7 +153,7 @@ export default function Contact() {
                       Need a faster response? Chat with us directly on WhatsApp for quick booking help.
                     </p>
                     <a
-                      href="https://wa.me/263000000000"
+                      href="https://wa.me/+263782856955"
                       target="_blank"
                       rel="noreferrer"
                       className="mt-5 inline-flex rounded-xl bg-white px-5 py-3 text-sm font-semibold text-green-700 transition hover:bg-zinc-100"
