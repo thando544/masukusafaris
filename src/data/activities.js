@@ -7,7 +7,8 @@ const activities = [
     priceLabel: "$190",
     unit: "person",
     category: "wildlife",
-    image: "/images/cafe.jpg",
+    image:
+      "https://res.cloudinary.com/dnqjax5ut/image/upload/q_auto/f_auto/v1775474825/WhatsApp_Image_2026-04-05_at_15.34.01_yu7zp0.jpg",
     shortDescription:
       "A memorable wildlife encounter featuring close-up experiences with elephants and cheetahs.",
     description:
@@ -17,6 +18,7 @@ const activities = [
     bestFor: "Wildlife lovers, couples, families",
     included: ["Guide assistance", "Experience access", "Safety briefing"],
     excluded: ["Transfers", "Personal expenses", "Meals"],
+    bookingLink: "/book",
   },
   {
     id: 2,
@@ -27,7 +29,8 @@ const activities = [
     priceLabel: "$80 - $120",
     unit: "person",
     category: "wildlife",
-    image: "/images/spot.jpg",
+    image:
+      "https://res.cloudinary.com/dnqjax5ut/image/upload/q_auto/f_auto/v1775468186/WhatsApp_Image_2026-04-05_at_15.33.58_mb6qen.jpg",
     shortDescription:
       "Join a shared safari drive and explore the beauty of African wildlife.",
     description:
@@ -37,6 +40,7 @@ const activities = [
     bestFor: "Groups, solo travelers, wildlife lovers",
     included: ["Game drive", "Guide", "Park experience"],
     excluded: ["Private vehicle", "Meals", "Personal expenses"],
+    bookingLink: "/book",
   },
   {
     id: 3,
@@ -47,7 +51,12 @@ const activities = [
     priceLabel: "$170 - $200",
     unit: "person",
     category: "wildlife",
-    image: "/images/drink.jpg",
+    image:
+      "https://res.cloudinary.com/dnqjax5ut/image/upload/q_auto/f_auto/v1775468183/WhatsApp_Image_2026-04-05_at_15.33.55_azqnjo.jpg",
+    gallery: [
+      "https://res.cloudinary.com/dnqjax5ut/image/upload/q_auto/f_auto/v1775468183/WhatsApp_Image_2026-04-05_at_15.33.55_azqnjo.jpg",
+      "https://res.cloudinary.com/dnqjax5ut/image/upload/q_auto/f_auto/v1775468183/WhatsApp_Image_2026-04-05_at_15.33.54_gjz8dn.jpg",
+    ],
     shortDescription:
       "A full-day adventure to Chobe National Park with wildlife viewing and unforgettable scenery.",
     description:
@@ -57,6 +66,7 @@ const activities = [
     bestFor: "Adventure travelers, wildlife lovers, couples",
     included: ["Safari experience", "Guide", "Selected activity access"],
     excluded: ["Visa fees", "Personal expenses", "Travel insurance"],
+    bookingLink: "/book",
   },
   {
     id: 4,
@@ -67,7 +77,8 @@ const activities = [
     priceLabel: "$100 - $130",
     unit: "person",
     category: "adventure",
-    image: "/images/1-jet.jpg",
+    image:
+      "https://res.cloudinary.com/dnqjax5ut/image/upload/q_auto/f_auto/v1775475036/WhatsApp_Image_2026-04-05_at_15.34.01_szdq9h.jpg",
     shortDescription:
       "An exciting high-speed adventure on the water near Victoria Falls.",
     description:
@@ -77,6 +88,7 @@ const activities = [
     bestFor: "Adventure seekers, groups, couples",
     included: ["Jet boat ride", "Safety gear", "Briefing"],
     excluded: ["Transfers", "Meals", "Photos"],
+    bookingLink: "/book",
   },
   {
     id: 5,
@@ -86,7 +98,8 @@ const activities = [
     priceLabel: "$160",
     unit: "person",
     category: "adventure",
-    image: "/images/rafting.jpg",
+    image:
+      "https://res.cloudinary.com/dnqjax5ut/image/upload/q_auto/f_auto/v1775468185/WhatsApp_Image_2026-04-05_at_15.34.03_knjlwj.jpg",
     shortDescription:
       "Take on the rapids for one of the most thrilling adventures in Victoria Falls.",
     description:
@@ -96,6 +109,7 @@ const activities = [
     bestFor: "Adventure seekers, active travelers",
     included: ["Rafting experience", "Guide", "Safety equipment"],
     excluded: ["Transfers", "Meals", "Travel insurance"],
+    bookingLink: "/book",
   },
   {
     id: 6,
@@ -105,7 +119,8 @@ const activities = [
     priceLabel: "$80",
     unit: "person",
     category: "nature-culture",
-    image: "/images/lance.jpg",
+    image:
+      "https://res.cloudinary.com/dnqjax5ut/image/upload/q_auto/f_auto/v1775474824/WhatsApp_Image_2026-04-05_at_15.33.57_ketqzs.jpg",
     shortDescription:
       "Explore both sides of the majestic Victoria Falls in one combined experience.",
     description:
@@ -115,6 +130,7 @@ const activities = [
     bestFor: "First-time visitors, couples, families",
     included: ["Guided tour", "Sightseeing experience"],
     excluded: ["Visa fees", "Meals", "Personal expenses"],
+    bookingLink: "/book",
   },
   {
     id: 7,
@@ -126,8 +142,7 @@ const activities = [
     unit: "person",
     category: "nature-culture",
     image: "/images/zamb.jpeg",
-    shortDescription:
-      "Relax and enjoy breathtaking sunset views on the water.",
+    shortDescription: "Relax and enjoy breathtaking sunset views on the water.",
     description:
       "A sunset cruise is a calm and scenic experience perfect for enjoying the natural beauty of the area in a relaxed atmosphere.",
     location: "Zambezi River",
@@ -135,6 +150,7 @@ const activities = [
     bestFor: "Couples, families, groups",
     included: ["Cruise experience", "Relaxed scenic viewing"],
     excluded: ["Premium drinks", "Transfers", "Personal expenses"],
+    bookingLink: "/book",
   },
   {
     id: 8,
@@ -154,6 +170,7 @@ const activities = [
     bestFor: "Couples, premium travelers, safari lovers",
     included: ["Night game drive", "Bush dinner", "Guide"],
     excluded: ["Premium extras", "Personal expenses"],
+    bookingLink: "/book",
   },
   {
     id: 9,
@@ -174,6 +191,7 @@ const activities = [
     bestFor: "Adventure seekers",
     included: ["Jump experience", "Safety briefing", "Equipment"],
     excluded: ["Photos", "Videos", "Transfers"],
+    bookingLink: "/book",
   },
   {
     id: 10,
@@ -194,6 +212,7 @@ const activities = [
     bestFor: "Adventure lovers, groups",
     included: ["Quad biking session", "Guide", "Safety briefing"],
     excluded: ["Transfers", "Meals", "Photos"],
+    bookingLink: "/book",
   },
 ];
 
