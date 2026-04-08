@@ -1133,7 +1133,199 @@ const packages = [
       ],
     },
   ],
-}
+},
+  {
+  id: 8,
+  slug: "13-days-kruger-matobo-hwange-victoria-falls",
+  title: "13 Days Kruger, Matobo, Hwange & Victoria Falls",
+  subtitle:
+    "A multi-country safari from South Africa to Zimbabwe and Botswana",
+  price: 0,
+  priceLabel: "Custom Quote",
+  unit: "per person",
+
+  // 🔥 COVER IMAGE (BEST SELECTED)
+  image:
+    "https://res.cloudinary.com/dnqjax5ut/image/upload/q_auto/f_auto/v1775626762/IMG-20260407-WA0003_kjaj0m.jpg",
+
+  // 🔥 GALLERY
+  gallery: [
+    "https://res.cloudinary.com/dnqjax5ut/image/upload/q_auto/f_auto/v1775626762/IMG-20260407-WA0003_kjaj0m.jpg",
+    "https://res.cloudinary.com/dnqjax5ut/image/upload/q_auto/f_auto/v1775626763/IMG-20260407-WA0001_l5kvcv.jpg",
+    "https://res.cloudinary.com/dnqjax5ut/image/upload/q_auto/f_auto/v1775626762/IMG-20260407-WA0000_mnlygp.jpg",
+    "https://res.cloudinary.com/dnqjax5ut/image/upload/q_auto/f_auto/v1775626762/IMG-20260407-WA0004_yyjrjw.jpg",
+  ],
+
+  shortDescription:
+    "An unforgettable safari journey from the Greater Kruger to Victoria Falls, combining Big Five game viewing, scenic landscapes, and iconic African destinations.",
+
+  description:
+    "This 13-day safari takes you on a breathtaking journey across Southern Africa. Starting in the wildlife-rich Manyeleti Private Game Reserve in the Greater Kruger ecosystem, you’ll experience close encounters with the Big Five. The journey continues into Zimbabwe’s Matobo National Park and Hwange National Park, known for dramatic landscapes and abundant wildlife. Finally, you’ll explore the world-famous Victoria Falls and enjoy a full-day safari adventure in Chobe National Park. This itinerary blends luxury, adventure, and authentic African experiences into one seamless journey.",
+
+  location: "South Africa • Zimbabwe • Botswana",
+  checkIn: "Day 1",
+  checkOut: "Day 13",
+
+  bestFor:
+    "Safari lovers, photographers, couples, groups, and travelers seeking a complete African experience",
+
+  popular: true,
+
+  included: [
+    "Airport pickup from Kruger Mpumalanga International Airport",
+    "All accommodation during the safari",
+    "Professional safari guide",
+    "Game drives in Manyeleti Private Game Reserve",
+    "Matobo National Park exploration",
+    "Hwange National Park game drives",
+    "Victoria Falls guided tour",
+    "Chobe full-day safari (game drive + boat cruise)",
+    "All transfers between destinations",
+  ],
+
+  excluded: [
+    "International flights",
+    "Visa fees",
+    "Travel insurance",
+    "Optional activities (rafting, bungee, etc.)",
+    "Personal expenses",
+    "Tips",
+  ],
+
+  amenities: [
+    "Big Five safari experience",
+    "Private reserve game drives",
+    "Luxury safari lodges",
+    "Cross-border travel experience",
+    "River cruise experience",
+    "Guided tours",
+    "Scenic landscapes",
+  ],
+
+  itinerary: [
+    {
+      day: "Day 1",
+      title: "Arrival & Transfer to Manyeleti Private Game Reserve",
+      stay: "Honeyguide Mantobeni Camp or similar",
+      details: [
+        "Arrival at Kruger Mpumalanga International Airport.",
+        "Transfer to Manyeleti Private Game Reserve.",
+        "Lunch at the lodge followed by an afternoon game drive.",
+        "Dinner and overnight at the lodge.",
+      ],
+    },
+    {
+      day: "Day 2",
+      title: "Manyeleti Safari Experience",
+      stay: "Honeyguide Mantobeni Camp or similar",
+      details: [
+        "Morning game drive in search of the Big Five.",
+        "Relaxation time at the lodge.",
+        "Afternoon game drive.",
+      ],
+    },
+    {
+      day: "Day 3",
+      title: "Full Day Safari in Manyeleti",
+      stay: "Honeyguide Mantobeni Camp or similar",
+      details: [
+        "Morning and afternoon game drives.",
+        "Enjoy the untouched wilderness of the Greater Kruger ecosystem.",
+      ],
+    },
+    {
+      day: "Day 4",
+      title: "Manyeleti to Matobo National Park",
+      stay: "Matobo lodge",
+      details: [
+        "Travel to Zimbabwe via Beitbridge border.",
+        "Arrival in Matobo National Park.",
+        "Optional afternoon activity or relaxation.",
+      ],
+    },
+    {
+      day: "Day 5",
+      title: "Matobo National Park Exploration",
+      stay: "Matobo lodge",
+      details: [
+        "Game drives and bush walks.",
+        "Explore unique granite landscapes and wildlife.",
+      ],
+    },
+    {
+      day: "Day 6",
+      title: "Matobo Cultural & Wildlife Experience",
+      stay: "Matobo lodge",
+      details: [
+        "Visit Rhino Sanctuary.",
+        "Explore cultural heritage sites.",
+      ],
+    },
+    {
+      day: "Day 7",
+      title: "Matobo to Hwange National Park",
+      stay: "Hwange lodge",
+      details: [
+        "Drive to Hwange National Park.",
+        "Afternoon game drive.",
+      ],
+    },
+    {
+      day: "Day 8",
+      title: "Hwange Safari",
+      stay: "Hwange lodge",
+      details: [
+        "Full-day game drives in Hwange.",
+        "Wildlife viewing at waterholes.",
+      ],
+    },
+    {
+      day: "Day 9",
+      title: "Hwange Exploration",
+      stay: "Hwange lodge",
+      details: [
+        "Another day of safari experiences in Hwange.",
+      ],
+    },
+    {
+      day: "Day 10",
+      title: "Hwange to Victoria Falls",
+      stay: "Victoria Falls lodge",
+      details: [
+        "Transfer to Victoria Falls.",
+        "Guided tour of the falls.",
+      ],
+    },
+    {
+      day: "Day 11",
+      title: "Victoria Falls Activities",
+      stay: "Victoria Falls lodge",
+      details: [
+        "Optional activities such as sunset cruise or rafting.",
+        "Free time to explore the town.",
+      ],
+    },
+    {
+      day: "Day 12",
+      title: "Chobe Full-Day Safari",
+      stay: "Victoria Falls lodge",
+      details: [
+        "Early departure to Chobe National Park.",
+        "Game drive and river cruise.",
+        "Lunch included.",
+      ],
+    },
+    {
+      day: "Day 13",
+      title: "Departure",
+      stay: "End of tour",
+      details: [
+        "Transfer to Victoria Falls International Airport.",
+        "End of safari.",
+      ],
+    },
+  ],
+    }
 ];
 
 export default packages;
