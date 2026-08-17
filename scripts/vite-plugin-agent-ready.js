@@ -11,7 +11,10 @@ const LINK_HEADER = [
   '</api/openapi.json>; rel="service-desc"; type="application/json"',
   '</docs/api>; rel="service-doc"; type="text/html"',
   '</.well-known/mcp/server-card.json>; rel="describedby"; type="application/json"',
+  '</.well-known/agent-index.json>; rel="describedby"; type="application/json"',
+  '</.well-known/agent-skills/index.json>; rel="describedby"; type="application/json"',
   '</auth.md>; rel="describedby"; type="text/markdown"',
+  '</sitemap.xml>; rel="describedby"; type="application/xml"',
 ].join(", ");
 
 const CONTENT_TYPES = {
@@ -29,6 +32,8 @@ const CONTENT_TYPES = {
   "/.well-known/agent-skills/index.json": "application/json; charset=utf-8",
   "/.well-known/agent-index.json": "application/json; charset=utf-8",
   "/.well-known/agent-card.json": "application/json; charset=utf-8",
+  "/.well-known/dns-aid.json": "application/json; charset=utf-8",
+  "/dns-aid.zone": "text/dns; charset=utf-8",
 };
 
 function prefersMarkdown(acceptHeader) {

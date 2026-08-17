@@ -2,14 +2,32 @@
   "version": "1.0",
   "domain": "masukusafaris.com",
   "policy": "https://masukusafaris.com/robots.txt",
+  "dns_aid": {
+    "index": "_index._agents.masukusafaris.com",
+    "records": [
+      "_index._agents.masukusafaris.com",
+      "_mcp._agents.masukusafaris.com",
+      "_a2a._agents.masukusafaris.com"
+    ],
+    "zone": "https://masukusafaris.com/dns-aid.zone",
+    "document": "https://masukusafaris.com/.well-known/dns-aid.json"
+  },
   "agents": [
     {
       "name": "masuku-safaris",
       "protocol": "mcp",
       "endpoint": "https://masukusafaris.com/api/mcp",
       "port": 443,
-      "alpn": ["mcp", "h2", "h3"],
-      "capabilities": ["safari-packages", "activities", "bookings", "inquiries"],
+      "alpn": [
+        "h2",
+        "h3"
+      ],
+      "capabilities": [
+        "safari-packages",
+        "activities",
+        "bookings",
+        "inquiries"
+      ],
       "version": "1.0.0",
       "description": "Masuku Adventure Safaris MCP server for packages, activities, and booking inquiries.",
       "use_cases": [

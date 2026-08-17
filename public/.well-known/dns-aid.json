@@ -1,0 +1,65 @@
+{
+  "version": "1.0",
+  "domain": "masukusafaris.com",
+  "draft": "draft-mozleywilliams-dnsop-dnsaid",
+  "nameservers": [
+    "dns1.registrar-servers.com",
+    "dns2.registrar-servers.com"
+  ],
+  "httpIndex": "https://masukusafaris.com/.well-known/agent-index.json",
+  "records": [
+    {
+      "name": "_index._agents.masukusafaris.com",
+      "type": "HTTPS",
+      "ttl": 3600,
+      "rdata": "1 masukusafaris.com. alpn=\"h2,h3\" port=443 mandatory=alpn,port"
+    },
+    {
+      "name": "_mcp._agents.masukusafaris.com",
+      "type": "HTTPS",
+      "ttl": 3600,
+      "rdata": "1 masukusafaris.com. alpn=\"h2,h3\" port=443 mandatory=alpn,port"
+    },
+    {
+      "name": "_a2a._agents.masukusafaris.com",
+      "type": "HTTPS",
+      "ttl": 3600,
+      "rdata": "1 masukusafaris.com. alpn=\"h2,h3\" port=443 mandatory=alpn,port"
+    },
+    {
+      "name": "_index._agents.masukusafaris.com",
+      "type": "TXT",
+      "ttl": 3600,
+      "rdata": "v=dnsaid1;alpn=h2,h3;port=443;target=masukusafaris.com;mcp=https://masukusafaris.com/api/mcp;cap=https://masukusafaris.com/.well-known/agent-index.json"
+    },
+    {
+      "name": "_index._agents.www.masukusafaris.com",
+      "type": "HTTPS",
+      "ttl": 3600,
+      "rdata": "1 masukusafaris.com. alpn=\"h2,h3\" port=443 mandatory=alpn,port"
+    },
+    {
+      "name": "_mcp._agents.www.masukusafaris.com",
+      "type": "HTTPS",
+      "ttl": 3600,
+      "rdata": "1 masukusafaris.com. alpn=\"h2,h3\" port=443 mandatory=alpn,port"
+    },
+    {
+      "name": "_a2a._agents.www.masukusafaris.com",
+      "type": "HTTPS",
+      "ttl": 3600,
+      "rdata": "1 masukusafaris.com. alpn=\"h2,h3\" port=443 mandatory=alpn,port"
+    },
+    {
+      "name": "_index._agents.www.masukusafaris.com",
+      "type": "TXT",
+      "ttl": 3600,
+      "rdata": "v=dnsaid1;alpn=h2,h3;port=443;target=masukusafaris.com;mcp=https://masukusafaris.com/api/mcp;cap=https://masukusafaris.com/.well-known/agent-index.json"
+    }
+  ],
+  "publish": {
+    "registrar": "Namecheap Advanced DNS",
+    "dnssec": "Enable DNSSEC for masukusafaris.com, then publish the DS record",
+    "note": "These records must exist in public DNS. Serving this JSON does not satisfy DNS-AID."
+  }
+}

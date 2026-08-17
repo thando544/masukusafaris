@@ -5,7 +5,7 @@ import { fileURLToPath } from "node:url";
 import packages from "../src/data/packages.js";
 import activities from "../src/data/activities.js";
 import { SITE, SITE_ORIGIN } from "./site.mjs";
-import { dnsAidZoneFile } from "./dns-aid.mjs";
+import { dnsAidZoneFile, dnsAidJson } from "./dns-aid.mjs";
 import { oauthProtectedResourceMetadata } from "../server/oauth-metadata.js";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
@@ -353,7 +353,55 @@ write(
   JSON.stringify(oauthProtectedResourceMetadata(wwwOrigin), null, 2) + "\n"
 );
 
+write(
+  ".well-known/agent-index.json",
+  JSON.stringify(
+    {
+      version: "1.0",
+      domain: "masukusafaris.com",
+      policy: `${SITE_ORIGIN}/robots.txt`,
+      dns_aid: {
+        index: `_index._agents.masukusafaris.com`,
+        records: [
+          `_index._agents.masukusafaris.com`,
+          `_mcp._agents.masukusafaris.com`,
+          `_a2a._agents.masukusafaris.com`,
+        ],
+        zone: `${SITE_ORIGIN}/dns-aid.zone`,
+        document: `${SITE_ORIGIN}/.well-known/dns-aid.json`,
+      },
+      agents: [
+        {
+          name: "masuku-safaris",
+          protocol: "mcp",
+          endpoint: `${SITE_ORIGIN}/api/mcp`,
+          port: 443,
+          alpn: ["h2", "h3"],
+          capabilities: ["safari-packages", "activities", "bookings", "inquiries"],
+          version: "1.0.0",
+          description:
+            "Masuku Adventure Safaris MCP server for packages, activities, and booking inquiries.",
+          use_cases: [
+            "Find safari packages",
+            "Compare Victoria Falls activities",
+            "Submit a booking inquiry",
+          ],
+          category: "travel",
+          card: `${SITE_ORIGIN}/.well-known/mcp/server-card.json`,
+          cap: `${SITE_ORIGIN}/.well-known/agent-card.json`,
+        },
+      ],
+    },
+    null,
+    2
+  ) + "\n"
+);
+
 write("dns-aid.zone", dnsAidZoneFile());
+write(
+  ".well-known/dns-aid.json",
+  JSON.stringify(dnsAidJson(), null, 2) + "\n"
+);
 
 console.log(
   `Generated sitemap (${urls.length} URLs), markdown pages, API catalogs, OAuth resource metadata, DNS-AID zone, and agent-skills index.`

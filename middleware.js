@@ -8,7 +8,10 @@ const LINK_HEADER = [
   '</api/openapi.json>; rel="service-desc"; type="application/json"',
   '</docs/api>; rel="service-doc"; type="text/html"',
   '</.well-known/mcp/server-card.json>; rel="describedby"; type="application/json"',
+  '</.well-known/agent-index.json>; rel="describedby"; type="application/json"',
+  '</.well-known/agent-skills/index.json>; rel="describedby"; type="application/json"',
   '</auth.md>; rel="describedby"; type="text/markdown"',
+  '</sitemap.xml>; rel="describedby"; type="application/xml"',
 ].join(", ");
 
 const MARKDOWN_ROUTES = new Set([

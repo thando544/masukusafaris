@@ -1,35 +1,27 @@
 ; DNS for AI Discovery (DNS-AID) — draft-mozleywilliams-dnsop-dnsaid
-; These records must be published at the DNS host for masukusafaris.com.
-; A file on the website cannot satisfy this check.
+; Publish at the DNS host. A file on the website cannot satisfy the scanner.
 ;
-; Current nameservers: dns1.registrar-servers.com (Namecheap BasicDNS).
-; Namecheap Advanced DNS often has TXT, and sometimes HTTPS, but not SVCB.
-; The isitagentready scanner queries SVCB, HTTPS, and TXT under _agents.
+; Nameservers today: dns1.registrar-servers.com (Namecheap BasicDNS).
 ;
-; Fastest path that can pass:
-;   1. Cloudflare (free): add the SVCB/HTTPS records below, DNS-only (grey cloud).
-;      Then enable DNSSEC and add the DS record back at Namecheap.
-;   2. Stay on Namecheap: add the TXT records now. If the panel has HTTPS,
-;      add those too. Enable DNSSEC under Domain List → Manage → DNSSEC.
+; Namecheap: Domain List → Manage → Advanced DNS → Add New Record
+;   Type HTTPS | Host _index._agents | Value 1 masukusafaris.com. alpn="h2,h3" port=443 mandatory=alpn,port | TTL 3600
+; Repeat for _mcp._agents, _a2a._agents, and the .www hosts below.
+; Also add the TXT records. Then enable DNSSEC.
 ;
-; Namecheap Advanced DNS fields: Type / Host / Value / TTL 3600
-; Cloudflare: Type SVCB or HTTPS / Name = Host / Priority 1 / Target masukusafaris.com /
-;             Value alpn="h2,h3" port=443 / Proxy DNS only
+; If HTTPS is missing from the Type dropdown, use Cloudflare DNS (free),
+; DNS-only / grey cloud, Type HTTPS or SVCB, then enable DNSSEC.
 
-; Well-known entrypoints (scanner checks www first, then apex)
-_index._agents.masukusafaris.com. 3600 IN SVCB 1 masukusafaris.com. alpn="h2,h3" port=443
-_index._agents.www.masukusafaris.com. 3600 IN SVCB 1 masukusafaris.com. alpn="h2,h3" port=443
-_mcp._agents.masukusafaris.com. 3600 IN SVCB 1 masukusafaris.com. alpn="h2,h3" port=443
-_mcp._agents.www.masukusafaris.com. 3600 IN SVCB 1 masukusafaris.com. alpn="h2,h3" port=443
-_a2a._agents.masukusafaris.com. 3600 IN HTTPS 1 masukusafaris.com. alpn="h2,h3" port=443
-_a2a._agents.www.masukusafaris.com. 3600 IN HTTPS 1 masukusafaris.com. alpn="h2,h3" port=443
+; Scanner queries HTTPS and SVCB at _index._agents, _mcp._agents, _a2a._agents
+; for both www.masukusafaris.com and masukusafaris.com.
+_index._agents.masukusafaris.com. 3600 IN HTTPS 1 masukusafaris.com. alpn="h2,h3" port=443 mandatory=alpn,port
+_mcp._agents.masukusafaris.com. 3600 IN HTTPS 1 masukusafaris.com. alpn="h2,h3" port=443 mandatory=alpn,port
+_a2a._agents.masukusafaris.com. 3600 IN HTTPS 1 masukusafaris.com. alpn="h2,h3" port=443 mandatory=alpn,port
 _index._agents.masukusafaris.com. 3600 IN TXT "v=dnsaid1;alpn=h2,h3;port=443;target=masukusafaris.com;mcp=https://masukusafaris.com/api/mcp;cap=https://masukusafaris.com/.well-known/agent-index.json"
+_index._agents.www.masukusafaris.com. 3600 IN HTTPS 1 masukusafaris.com. alpn="h2,h3" port=443 mandatory=alpn,port
+_mcp._agents.www.masukusafaris.com. 3600 IN HTTPS 1 masukusafaris.com. alpn="h2,h3" port=443 mandatory=alpn,port
+_a2a._agents.www.masukusafaris.com. 3600 IN HTTPS 1 masukusafaris.com. alpn="h2,h3" port=443 mandatory=alpn,port
 _index._agents.www.masukusafaris.com. 3600 IN TXT "v=dnsaid1;alpn=h2,h3;port=443;target=masukusafaris.com;mcp=https://masukusafaris.com/api/mcp;cap=https://masukusafaris.com/.well-known/agent-index.json"
 
-; Site HTTPS bindings
-masukusafaris.com. 3600 IN HTTPS 1 . alpn="h2,h3"
-www.masukusafaris.com. 3600 IN HTTPS 1 masukusafaris.com. alpn="h2,h3"
-
-; HTTP index fallback: https://masukusafaris.com/.well-known/agent-index.json
-; Masuku Adventure Safaris MCP: https://masukusafaris.com/api/mcp
+; HTTP index: https://masukusafaris.com/.well-known/agent-index.json
+; MCP: https://masukusafaris.com/api/mcp
 
