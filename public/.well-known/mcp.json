@@ -1,0 +1,13 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-10-17/server.schema.json",
+  "name": "io.github.thando544/masuku-safaris",
+  "description": "Browse safari packages and Victoria Falls activities, then submit booking inquiries for Masuku Adventure Safaris.",
+  "version": "1.0.0",
+  "websiteUrl": "https://masukusafaris.com",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://masukusafaris.com/api/mcp"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "resource": "https://masukusafaris.com/",
+  "resource_name": "Masuku Adventure Safaris",
+  "resource_documentation": "https://masukusafaris.com/docs/api",
+  "authorization_servers": ["https://masukusafaris.com"],
+  "bearer_methods_supported": ["header"],
+  "scopes_supported": [
+    "packages.read",
+    "activities.read",
+    "inquiries.write",
+    "bookings.write"
+  ],
+  "resource_signing_alg_values_supported": ["RS256", "HS256"]
+}

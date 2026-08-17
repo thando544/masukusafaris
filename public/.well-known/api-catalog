@@ -1,0 +1,88 @@
+{
+  "linkset": [
+    {
+      "anchor": "https://masukusafaris.com/api/packages",
+      "service-desc": [
+        {
+          "href": "https://masukusafaris.com/api/openapi.json",
+          "type": "application/json"
+        }
+      ],
+      "service-doc": [
+        {
+          "href": "https://masukusafaris.com/docs/api",
+          "type": "text/html"
+        }
+      ],
+      "status": [
+        {
+          "href": "https://masukusafaris.com/api/health",
+          "type": "application/json"
+        }
+      ]
+    },
+    {
+      "anchor": "https://masukusafaris.com/api/activities",
+      "service-desc": [
+        {
+          "href": "https://masukusafaris.com/api/openapi.json",
+          "type": "application/json"
+        }
+      ],
+      "service-doc": [
+        {
+          "href": "https://masukusafaris.com/docs/api",
+          "type": "text/html"
+        }
+      ],
+      "status": [
+        {
+          "href": "https://masukusafaris.com/api/health",
+          "type": "application/json"
+        }
+      ]
+    },
+    {
+      "anchor": "https://masukusafaris.com/api/inquiries",
+      "service-desc": [
+        {
+          "href": "https://masukusafaris.com/api/openapi.json",
+          "type": "application/json"
+        }
+      ],
+      "service-doc": [
+        {
+          "href": "https://masukusafaris.com/docs/api",
+          "type": "text/html"
+        }
+      ],
+      "status": [
+        {
+          "href": "https://masukusafaris.com/api/health",
+          "type": "application/json"
+        }
+      ]
+    },
+    {
+      "anchor": "https://masukusafaris.com/api/mcp",
+      "service-desc": [
+        {
+          "href": "https://masukusafaris.com/.well-known/mcp/server-card.json",
+          "type": "application/json"
+        }
+      ],
+      "service-doc": [
+        {
+          "href": "https://masukusafaris.com/docs/api",
+          "type": "text/html"
+        }
+      ],
+      "status": [
+        {
+          "href": "https://masukusafaris.com/api/health",
+          "type": "application/json"
+        }
+      ]
+    }
+  ]
+}

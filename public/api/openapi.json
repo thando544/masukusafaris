@@ -1,0 +1,151 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Masuku Adventure Safaris API",
+    "version": "1.0.0",
+    "description": "Public catalog of safari packages and Victoria Falls activities, plus booking inquiries.",
+    "contact": {
+      "name": "Masuku Adventure Safaris",
+      "email": "bookings@masukusafaris.com",
+      "url": "https://masukusafaris.com/contact"
+    }
+  },
+  "servers": [
+    { "url": "https://masukusafaris.com" }
+  ],
+  "paths": {
+    "/api/health": {
+      "get": {
+        "summary": "Health check",
+        "operationId": "getHealth",
+        "responses": {
+          "200": {
+            "description": "Service is available",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "status": { "type": "string" },
+                    "service": { "type": "string" },
+                    "time": { "type": "string", "format": "date-time" }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/packages": {
+      "get": {
+        "summary": "List safari packages",
+        "operationId": "listPackages",
+        "responses": {
+          "200": {
+            "description": "Package catalog",
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/components/schemas/PackageList" }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/packages/{slug}": {
+      "get": {
+        "summary": "Get a safari package",
+        "operationId": "getPackage",
+        "parameters": [
+          {
+            "name": "slug",
+            "in": "path",
+            "required": true,
+            "schema": { "type": "string" }
+          }
+        ],
+        "responses": {
+          "200": { "description": "Package" },
+          "404": { "description": "Not found" }
+        }
+      }
+    },
+    "/api/activities": {
+      "get": {
+        "summary": "List activities",
+        "operationId": "listActivities",
+        "responses": {
+          "200": { "description": "Activity catalog" }
+        }
+      }
+    },
+    "/api/activities/{slug}": {
+      "get": {
+        "summary": "Get an activity",
+        "operationId": "getActivity",
+        "parameters": [
+          {
+            "name": "slug",
+            "in": "path",
+            "required": true,
+            "schema": { "type": "string" }
+          }
+        ],
+        "responses": {
+          "200": { "description": "Activity" },
+          "404": { "description": "Not found" }
+        }
+      }
+    },
+    "/api/inquiries": {
+      "post": {
+        "summary": "Create a booking or contact inquiry",
+        "operationId": "createInquiry",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": { "$ref": "#/components/schemas/Inquiry" }
+            }
+          }
+        },
+        "responses": {
+          "201": { "description": "Inquiry accepted" },
+          "400": { "description": "Invalid request" }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "PackageList": {
+        "type": "object",
+        "properties": {
+          "packages": { "type": "array", "items": { "type": "object" } }
+        }
+      },
+      "Inquiry": {
+        "type": "object",
+        "required": ["fullName", "email"],
+        "properties": {
+          "type": { "type": "string", "enum": ["package", "activity", "contact", "custom"] },
+          "slug": { "type": "string" },
+          "fullName": { "type": "string" },
+          "email": { "type": "string", "format": "email" },
+          "phone": { "type": "string" },
+          "guests": { "type": "integer" },
+          "checkIn": { "type": "string" },
+          "checkOut": { "type": "string" },
+          "message": { "type": "string" }
+        }
+      }
+    },
+    "securitySchemes": {
+      "bearerAuth": {
+        "type": "http",
+        "scheme": "bearer"
+      }
+    }
+  }
+}

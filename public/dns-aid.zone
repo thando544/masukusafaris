@@ -1,0 +1,37 @@
+; DNS for AI Discovery (DNS-AID) — draft-mozleywilliams-dnsop-dnsaid
+; Publish these at your DNS host for masukusafaris.com and enable DNSSEC.
+;
+; Cloudflare: DNS → Add record → type SVCB (or HTTPS).
+; If SVCB custom params are unsupported, add the TXT fallbacks too.
+
+; Organization index (required well-known entrypoint)
+_index._agents.masukusafaris.com. 3600 IN SVCB 1 masukusafaris.com. (
+    alpn="h2,h3,mcp"
+    port=443
+    mandatory=alpn,port
+)
+
+_index._agents.masukusafaris.com. 3600 IN TXT "v=dnsaid1;mcp=masukusafaris.com;a2a=masukusafaris.com;cap=https://masukusafaris.com/.well-known/agent-index.json"
+
+; MCP agent
+_mcp._agents.masukusafaris.com. 3600 IN SVCB 1 masukusafaris.com. (
+    alpn="mcp,h2,h3"
+    port=443
+    mandatory=alpn,port
+)
+
+_a2a._agents.masukusafaris.com. 3600 IN SVCB 1 masukusafaris.com. (
+    alpn="a2a,h2"
+    port=443
+    mandatory=alpn,port
+)
+
+; Flat primary owner names (draft-02)
+mcp.masukusafaris.com. 3600 IN SVCB 1 masukusafaris.com. alpn="mcp,h2" port=443
+
+; HTTPS service binding for the site itself
+masukusafaris.com. 3600 IN HTTPS 1 . alpn="h2,h3"
+www.masukusafaris.com. 3600 IN HTTPS 1 masukusafaris.com. alpn="h2,h3"
+
+; HTTP fallback (already served by this site):
+; https://masukusafaris.com/.well-known/agent-index.json

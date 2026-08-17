@@ -5,9 +5,11 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "prebuild": "node scripts/generate-agent-assets.mjs",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "generate:agent": "node scripts/generate-agent-assets.mjs"
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",

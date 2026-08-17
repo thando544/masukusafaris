@@ -1,0 +1,31 @@
+# Masuku Adventure Safaris
+
+> Curated African safari packages, Victoria Falls activities, and transfers. Based in Victoria Falls, Zimbabwe.
+
+Masuku Adventure Safaris plans wildlife journeys across Zimbabwe, Botswana, Zambia, Tanzania, Kenya, Namibia, and South Africa. Travelers can browse packages, book activities, and request custom itineraries.
+
+Site: https://masukusafaris.com
+Email: bookings@masukusafaris.com
+Phone: +263 78 285 6955
+WhatsApp: https://wa.me/263782856955
+Location: Victoria Falls, Zimbabwe
+
+## For agents
+
+- Markdown pages: request any HTML URL with `Accept: text/markdown`
+- API catalog: https://masukusafaris.com/.well-known/api-catalog
+- OpenAPI: https://masukusafaris.com/api/openapi.json
+- API docs: https://masukusafaris.com/docs/api
+- MCP server card: https://masukusafaris.com/.well-known/mcp/server-card.json
+- Agent skills: https://masukusafaris.com/.well-known/agent-skills/index.json
+- Auth for agents: https://masukusafaris.com/auth.md
+- Sitemap: https://masukusafaris.com/sitemap.xml
+
+## Pages
+
+- [Home](https://masukusafaris.com/): Overview of safaris, activities, and transfers
+- [Packages](https://masukusafaris.com/packages): Multi-day safari itineraries
+- [Activities](https://masukusafaris.com/activities): Victoria Falls and Chobe day experiences
+- [About](https://masukusafaris.com/about): Who we are
+- [Contact](https://masukusafaris.com/contact): Inquiry form and contact details
+- [Book](https://masukusafaris.com/book): Booking request form

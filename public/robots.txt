@@ -1,0 +1,74 @@
+# Masuku Adventure Safaris — crawl policy (RFC 9309)
+# Content Signals: https://contentsignals.org/
+
+User-agent: *
+Allow: /
+Allow: /packages
+Allow: /activities
+Allow: /about
+Allow: /contact
+Allow: /book
+Allow: /api/packages
+Allow: /api/activities
+Allow: /api/health
+Allow: /.well-known/
+Disallow: /api/oauth/
+Disallow: /api/agent/
+Content-Signal: ai-train=no, search=yes, ai-input=yes
+
+# OpenAI
+User-agent: GPTBot
+Allow: /
+Content-Signal: ai-train=no, search=yes, ai-input=yes
+
+User-agent: OAI-SearchBot
+Allow: /
+Content-Signal: ai-train=no, search=yes, ai-input=yes
+
+User-agent: ChatGPT-User
+Allow: /
+Content-Signal: ai-train=no, search=yes, ai-input=yes
+
+# Anthropic
+User-agent: Claude-Web
+Allow: /
+Content-Signal: ai-train=no, search=yes, ai-input=yes
+
+User-agent: ClaudeBot
+Allow: /
+Content-Signal: ai-train=no, search=yes, ai-input=yes
+
+User-agent: anthropic-ai
+Allow: /
+Content-Signal: ai-train=no, search=yes, ai-input=yes
+
+# Google Gemini / Vertex AI training
+User-agent: Google-Extended
+Allow: /
+Content-Signal: ai-train=no, search=yes, ai-input=yes
+
+# Amazon
+User-agent: Amazonbot
+Allow: /
+Content-Signal: ai-train=no, search=yes, ai-input=yes
+
+# Apple
+User-agent: Applebot-Extended
+Allow: /
+Content-Signal: ai-train=no, search=yes, ai-input=yes
+
+# Common Crawl / ByteDance
+User-agent: CCBot
+Allow: /
+Content-Signal: ai-train=no, search=yes, ai-input=yes
+
+User-agent: Bytespider
+Allow: /
+Content-Signal: ai-train=no, search=yes, ai-input=yes
+
+# Perplexity
+User-agent: PerplexityBot
+Allow: /
+Content-Signal: ai-train=no, search=yes, ai-input=yes
+
+Sitemap: https://masukusafaris.com/sitemap.xml

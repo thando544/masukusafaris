@@ -1,0 +1,19 @@
+{
+  "$schema": "https://schemas.agentskills.io/discovery/0.2.0/schema.json",
+  "skills": [
+    {
+      "name": "book-safari",
+      "type": "skill-md",
+      "description": "Book a Masuku Adventure Safaris package or Victoria Falls activity via the public API. Use when a traveler wants to reserve a safari, request a quote, or send an inquiry.",
+      "url": "https://masukusafaris.com/.well-known/agent-skills/book-safari/SKILL.md",
+      "digest": "sha256:15b1f77bd62fda1f314acc562fccbe63a8d32a481dd9603cacbc7ffb476e2fff"
+    },
+    {
+      "name": "discover-safaris",
+      "type": "skill-md",
+      "description": "Discover Masuku Adventure Safaris packages and Victoria Falls activities. Use when a traveler is researching African safari itineraries, destinations, or day trips.",
+      "url": "https://masukusafaris.com/.well-known/agent-skills/discover-safaris/SKILL.md",
+      "digest": "sha256:ca59be730af3254e73977fda98af611df3aa6fbc0ec0bf7c9ec64b163f4b07b1"
+    }
+  ]
+}

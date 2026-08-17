@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Masuku Adventure Safaris API</title>
+    <style>
+      :root { color-scheme: light; }
+      body { font-family: Georgia, serif; max-width: 48rem; margin: 2rem auto; padding: 0 1.25rem; line-height: 1.6; color: #18181b; }
+      a { color: #b45309; }
+      code, pre { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 0.9em; }
+      pre { background: #f4f4f5; padding: 1rem; overflow: auto; border-radius: 0.75rem; }
+      h1, h2 { font-family: ui-sans-serif, system-ui, sans-serif; }
+    </style>
+  </head>
+  <body>
+    <p><a href="/">Masuku Adventure Safaris</a></p>
+    <h1>Public API</h1>
+    <p>
+      Machine-readable catalog of safari packages and Victoria Falls activities,
+      plus booking inquiries. OpenAPI:
+      <a href="/api/openapi.json">/api/openapi.json</a>.
+    </p>
+    <h2>Endpoints</h2>
+    <ul>
+      <li><code>GET /api/health</code> — service status</li>
+      <li><code>GET /api/packages</code> — safari packages</li>
+      <li><code>GET /api/packages/{slug}</code> — one package</li>
+      <li><code>GET /api/activities</code> — activities</li>
+      <li><code>GET /api/activities/{slug}</code> — one activity</li>
+      <li><code>POST /api/inquiries</code> — booking or contact inquiry</li>
+      <li><code>POST /api/mcp</code> — Model Context Protocol (Streamable HTTP)</li>
+    </ul>
+    <h2>Discovery</h2>
+    <ul>
+      <li><a href="/.well-known/api-catalog">API catalog</a> (RFC 9727)</li>
+      <li><a href="/.well-known/mcp/server-card.json">MCP server card</a></li>
+      <li><a href="/auth.md">auth.md</a> — agent registration</li>
+      <li><a href="/robots.txt">robots.txt</a> · <a href="/sitemap.xml">sitemap.xml</a></li>
+    </ul>
+    <h2>Example</h2>
+    <pre>curl https://masukusafaris.com/api/packages
+curl -H "Accept: text/markdown" https://masukusafaris.com/</pre>
+    <p>Human bookings: <a href="mailto:bookings@masukusafaris.com">bookings@masukusafaris.com</a> · +263 78 285 6955</p>
+  </body>
+</html>

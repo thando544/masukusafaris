@@ -1,0 +1,41 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/mcp-server-card/v1.json",
+  "version": "1.0",
+  "protocolVersion": "2025-06-18",
+  "serverInfo": {
+    "name": "masuku-safaris",
+    "title": "Masuku Adventure Safaris",
+    "version": "1.0.0"
+  },
+  "description": "Browse safari packages and Victoria Falls activities, then submit booking inquiries for Masuku Adventure Safaris.",
+  "documentationUrl": "https://masukusafaris.com/docs/api",
+  "transport": {
+    "type": "streamable-http",
+    "endpoint": "https://masukusafaris.com/api/mcp"
+  },
+  "capabilities": {
+    "tools": {
+      "listChanged": false
+    },
+    "resources": {
+      "subscribe": false,
+      "listChanged": false
+    },
+    "prompts": {
+      "listChanged": false
+    }
+  },
+  "authentication": {
+    "required": false,
+    "schemes": ["bearer", "oauth2"]
+  },
+  "instructions": "Use list_packages and list_activities to explore trips. Use create_inquiry to send a booking request. Human follow-up happens by email or WhatsApp.",
+  "name": "io.github.thando544/masuku-safaris",
+  "websiteUrl": "https://masukusafaris.com",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://masukusafaris.com/api/mcp"
+    }
+  ]
+}

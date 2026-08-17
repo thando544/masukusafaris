@@ -1,0 +1,22 @@
+{
+  "name": "Masuku Adventure Safaris",
+  "description": "Safari planning agent for packages, activities, and booking inquiries from Victoria Falls, Zimbabwe.",
+  "version": "1.0.0",
+  "url": "https://masukusafaris.com",
+  "provider": {
+    "organization": "Masuku Adventure Safaris",
+    "url": "https://masukusafaris.com"
+  },
+  "capabilities": ["safari-packages", "activities", "bookings", "inquiries"],
+  "use_cases": [
+    "Find safari packages",
+    "Compare Victoria Falls activities",
+    "Submit a booking inquiry"
+  ],
+  "category": "travel",
+  "endpoints": {
+    "mcp": "https://masukusafaris.com/api/mcp",
+    "http": "https://masukusafaris.com/api/packages"
+  },
+  "skills": ["book-safari", "discover-safaris"]
+}
