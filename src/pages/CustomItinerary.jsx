@@ -3,21 +3,19 @@ import Footer from "../components/layout/Footer";
 import InquiryForm from "../components/common/InquiryForm";
 import { SITE } from "../config/site";
 import { Link } from "react-router-dom";
+import HeroBanner from "../components/layout/HeroBanner";
 
 export default function CustomItinerary() {
   return (
     <div className="bg-[#f6f1e8] text-zinc-900">
       <Navbar />
       <main>
-        <section className="relative h-[60vh] min-h-105 overflow-hidden">
-          <img
-            src="/images/walking.jpeg"
-            alt="Tailor-made safari journey"
-            className="hero-media absolute inset-0 h-full w-full max-w-none object-cover object-center"
-          />
-          <div className="hero-veil absolute inset-0" />
-          <div className="relative mx-auto flex h-full max-w-7xl items-end px-4 pb-16 md:px-6 lg:px-8">
-            <div className="max-w-3xl pt-24 text-white">
+        <HeroBanner
+          src="/images/lance.jpg"
+          alt="Tailor-made safari journey"
+          className="min-h-[60vh]"
+        >
+          <div className="max-w-3xl text-white">
               <p className="mb-3 text-sm uppercase tracking-[0.24em] text-white/75">
                 Bespoke Travel
               </p>
@@ -30,8 +28,7 @@ export default function CustomItinerary() {
                 Delta, and beyond.
               </p>
             </div>
-          </div>
-        </section>
+        </HeroBanner>
 
         <section className="py-20 md:py-24">
           <div className="mx-auto grid max-w-7xl gap-10 px-4 md:px-6 lg:grid-cols-12 lg:px-8">

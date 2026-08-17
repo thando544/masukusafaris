@@ -2,6 +2,7 @@ import Navbar from "../components/layout/Navbar";
 import Footer from "../components/layout/Footer";
 import { Link } from "react-router-dom";
 import Photo from "../components/common/Photo";
+import HeroBanner from "../components/layout/HeroBanner";
 import {
   FaCompass,
   FaGlobeAfrica,
@@ -53,16 +54,8 @@ export default function About() {
       <Navbar />
 
       <main>
-        <section className="relative min-h-[72vh] overflow-hidden">
-          <img
-            src="/images/hero.jpg"
-            alt="Masuku Adventure Safaris"
-            className="absolute inset-0 h-full w-full max-w-none object-cover object-center"
-          />
-          <div className="absolute inset-0 bg-black/50" />
-
-          <div className="relative mx-auto flex min-h-[72vh] max-w-7xl items-end px-4 pb-16 md:px-6 lg:px-8">
-            <div className="max-w-4xl pt-24 text-white">
+        <HeroBanner src="/images/hero.jpg" alt="Masuku Adventure Safaris" className="min-h-[72vh]">
+          <div className="max-w-4xl text-white">
               <p className="mb-4 text-xs font-semibold uppercase tracking-[0.28em] text-white/75">
                 About Masuku Adventure Safaris
               </p>
@@ -75,8 +68,7 @@ export default function About() {
                 remember for a lifetime.
               </p>
             </div>
-          </div>
-        </section>
+        </HeroBanner>
 
         <section className="py-20 md:py-24">
           <div className="mx-auto grid max-w-7xl gap-12 px-4 md:px-6 lg:grid-cols-12 lg:px-8">

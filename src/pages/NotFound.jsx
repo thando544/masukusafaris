@@ -2,20 +2,19 @@ import { Link } from "react-router-dom";
 import Navbar from "../components/layout/Navbar";
 import Footer from "../components/layout/Footer";
 import { SITE } from "../config/site";
+import HeroBanner from "../components/layout/HeroBanner";
 
 export default function NotFound() {
   return (
     <div className="min-h-screen bg-[#f6f1e8] text-zinc-900">
       <Navbar />
       <main>
-        <section className="relative min-h-screen overflow-hidden">
-          <img
-            src="/images/hero.jpg"
-            alt="African safari landscape"
-            className="hero-media absolute inset-0 h-full w-full max-w-none object-cover object-center"
-          />
-          <div className="hero-veil absolute inset-0" />
-          <div className="relative mx-auto flex min-h-screen max-w-3xl flex-col items-start justify-end px-4 pb-24 pt-32 md:px-6">
+        <HeroBanner
+          src="/images/hero.jpg"
+          alt="African safari landscape"
+          className="min-h-screen"
+          contentClassName="max-w-3xl flex-col items-start justify-end pb-24 pt-32"
+        >
             <p className="text-sm uppercase tracking-[0.24em] text-white/70">404</p>
             <h1 className="mt-4 text-4xl font-semibold text-white md:text-6xl">
               This path is off the map.
@@ -47,8 +46,7 @@ export default function NotFound() {
                 WhatsApp Us
               </a>
             </div>
-          </div>
-        </section>
+        </HeroBanner>
       </main>
       <Footer />
     </div>

@@ -3,6 +3,7 @@ import activities from "../data/activities";
 import Navbar from "../components/layout/Navbar";
 import Footer from "../components/layout/Footer";
 import BookingForm from "../components/booking/BookingForm";
+import HeroBanner from "../components/layout/HeroBanner";
 
 export default function ActivityDetails() {
   const { slug } = useParams();
@@ -34,16 +35,12 @@ export default function ActivityDetails() {
       <Navbar />
 
       <main>
-        <section className="relative h-[75vh] min-h-130 overflow-hidden">
-          <img
-            src={selectedActivity.image}
-            alt={selectedActivity.title}
-            className="absolute inset-0 h-full w-full max-w-none object-cover object-center"
-          />
-          <div className="absolute inset-0 bg-black/45" />
-
-          <div className="relative mx-auto flex h-full max-w-7xl items-end px-4 pb-16 md:px-6 lg:px-8">
-            <div className="max-w-3xl pt-24 text-white">
+        <HeroBanner
+          src={selectedActivity.image}
+          alt={selectedActivity.title}
+          className="min-h-[75vh]"
+        >
+          <div className="max-w-3xl text-white">
               <p className="mb-3 text-sm uppercase tracking-[0.24em] text-white/75">
                 {selectedActivity.category.replace("-", " ")}
               </p>
@@ -54,8 +51,7 @@ export default function ActivityDetails() {
                 {selectedActivity.shortDescription}
               </p>
             </div>
-          </div>
-        </section>
+        </HeroBanner>
 
         <section className="py-20 md:py-24">
           <div className="mx-auto max-w-7xl px-4 md:px-6 lg:px-8">

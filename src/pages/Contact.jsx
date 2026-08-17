@@ -3,6 +3,7 @@ import Footer from "../components/layout/Footer";
 import InquiryForm from "../components/common/InquiryForm";
 import { SITE } from "../config/site";
 import { FaEnvelope, FaMapMarkerAlt, FaPhoneAlt, FaWhatsapp } from "react-icons/fa";
+import HeroBanner from "../components/layout/HeroBanner";
 
 export default function Contact() {
   return (
@@ -10,16 +11,12 @@ export default function Contact() {
       <Navbar />
 
       <main>
-        <section className="relative h-[60vh] min-h-105 overflow-hidden">
-          <img
-            src="/images/village.jpeg"
-            alt="Victoria Falls and safari country"
-            className="hero-media absolute inset-0 h-full w-full max-w-none object-cover object-center"
-          />
-          <div className="hero-veil absolute inset-0" />
-
-          <div className="relative mx-auto flex h-full max-w-7xl items-end px-4 pb-16 md:px-6 lg:px-8">
-            <div className="max-w-3xl pt-24 text-white">
+        <HeroBanner
+          src="/images/zamb.jpeg"
+          alt="Victoria Falls and safari country"
+          className="min-h-[60vh]"
+        >
+          <div className="max-w-3xl text-white">
               <p className="mb-3 text-sm uppercase tracking-[0.24em] text-white/75">
                 Get In Touch
               </p>
@@ -31,8 +28,7 @@ export default function Contact() {
                 and comfortable stays across Victoria Falls and beyond. {SITE.replyTime}
               </p>
             </div>
-          </div>
-        </section>
+        </HeroBanner>
 
         <section className="py-20 md:py-24">
           <div className="mx-auto max-w-7xl px-4 md:px-6 lg:px-8">

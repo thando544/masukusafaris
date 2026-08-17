@@ -25,21 +25,37 @@ img {
   object-position: center;
 }
 
-.hero-media {
+.hero-banner {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.hero-banner img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: auto !important;
+  height: auto !important;
+  min-width: 100%;
+  min-height: 100%;
+  max-width: none !important;
   object-fit: cover;
   object-position: center;
-  max-width: none;
-  background-size: cover;
-  background-position: center;
+  transform: translate(-50%, -50%);
+}
+
+.hero-banner img.hero-kenburns {
   animation: kenburns 24s ease-out forwards;
 }
 
 @keyframes kenburns {
   from {
-    transform: scale(1.04);
+    transform: translate(-50%, -50%) scale(1.02);
   }
   to {
-    transform: scale(1.12);
+    transform: translate(-50%, -50%) scale(1.08);
   }
 }
 

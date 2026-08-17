@@ -3,6 +3,7 @@ import Footer from "../components/layout/Footer";
 import packages from "../data/packages";
 import { Link } from "react-router-dom";
 import Photo from "../components/common/Photo";
+import HeroBanner from "../components/layout/HeroBanner";
 
 export default function Packages() {
   return (
@@ -10,16 +11,8 @@ export default function Packages() {
       <Navbar />
 
       <main>
-        <section className="relative min-h-[68vh] overflow-hidden">
-          <img
-            src="/images/tanzania.jpeg"
-            alt="Safari packages"
-            className="absolute inset-0 h-full w-full max-w-none object-cover object-center"
-          />
-          <div className="absolute inset-0 bg-black/50" />
-
-          <div className="relative mx-auto flex min-h-[68vh] max-w-7xl items-end px-4 pb-16 md:px-6 lg:px-8">
-            <div className="max-w-4xl pt-24 text-white">
+        <HeroBanner src="/images/tanzaniCover.jpeg" alt="Safari packages">
+          <div className="max-w-4xl text-white">
               <p className="mb-4 text-xs font-semibold uppercase tracking-[0.28em] text-white/75">
                 Signature Safari Journeys
               </p>
@@ -34,8 +27,7 @@ export default function Packages() {
                 experiences.
               </p>
             </div>
-          </div>
-        </section>
+        </HeroBanner>
 
         <section className="py-20 md:py-24">
           <div className="mx-auto max-w-7xl px-4 md:px-6 lg:px-8">
