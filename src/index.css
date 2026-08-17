@@ -1,5 +1,5 @@
 @import 'tailwindcss';
-
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Outfit:wght@300;400;500;600;700&display=swap');
 
 html {
   scroll-behavior: smooth;
@@ -7,9 +7,40 @@ html {
 
 body {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  background: white;
-  color: #18181b;
+  font-family: Outfit, ui-sans-serif, system-ui, sans-serif;
+  background: #f6f1e8;
+  color: #1c1917;
+}
+
+h1,
+h2,
+h3,
+.font-display {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.hero-media {
+  animation: kenburns 24s ease-out forwards;
+}
+
+@keyframes kenburns {
+  from {
+    transform: scale(1.04);
+  }
+  to {
+    transform: scale(1.12);
+  }
+}
+
+.hero-veil {
+  background: linear-gradient(
+    to top,
+    rgba(12, 10, 9, 0.78) 0%,
+    rgba(12, 10, 9, 0.28) 48%,
+    rgba(12, 10, 9, 0.18) 100%
+  );
 }
 
 .swiper-pagination {
@@ -25,10 +56,10 @@ body {
 }
 
 .swiper-pagination-bullet-active {
-  background: #18181b;
+  background: #1c1917;
 }
 
 .swiper-button-prev,
 .swiper-button-next {
-  color: #18181b !important;
+  color: #1c1917 !important;
 }

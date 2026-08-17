@@ -1,14 +1,7 @@
 import { Link } from "react-router-dom";
-import {
-  FaFacebookF,
-  FaInstagram,
-  FaXTwitter,
-  FaWhatsapp,
-} from "react-icons/fa6";
-import {
-  HiOutlineMapPin,
-  HiOutlinePhone,
-} from "react-icons/hi2";
+import { FaFacebookF, FaWhatsapp } from "react-icons/fa6";
+import { HiOutlineEnvelope, HiOutlineMapPin, HiOutlinePhone } from "react-icons/hi2";
+import { SITE } from "../../config/site";
 
 export default function Footer() {
   const quickLinks = [
@@ -29,18 +22,13 @@ export default function Footer() {
   const socialLinks = [
     {
       label: "Facebook",
-      href: "https://www.facebook.com/people/Masuku-Adventure-Safaris/61584398296602/?rdid=Jc62tpWijU5snyOU&share_url=https%253A%252F%252Fwww.facebook.com%252Fshare%252F1KNhW68JYz%252F",
+      href: SITE.facebook,
       icon: <FaFacebookF />,
     },
     {
-      label: "X",
-      href: "#",
-      icon: <FaXTwitter />,
-    },
-    {
-      label: "Instagram",
-      href: "#",
-      icon: <FaInstagram />,
+      label: "WhatsApp",
+      href: SITE.whatsapp,
+      icon: <FaWhatsapp />,
     },
   ];
 
@@ -50,7 +38,7 @@ export default function Footer() {
         <div className="mx-auto grid max-w-7xl gap-10 px-4 py-16 md:px-6 lg:grid-cols-12 lg:px-8">
           <div className="lg:col-span-5">
             <p className="text-xs font-semibold uppercase tracking-[0.28em] text-amber-400">
-              Masuku Adventure Safaris
+              {SITE.name}
             </p>
 
             <h2 className="mt-4 max-w-md text-3xl font-semibold leading-tight text-white md:text-4xl">
@@ -73,7 +61,7 @@ export default function Footer() {
               </Link>
 
               <a
-                href="https://wa.me/263782856955"
+                href={SITE.whatsapp}
                 target="_blank"
                 rel="noreferrer"
                 className="inline-flex items-center justify-center gap-2 rounded-xl border border-white/15 bg-white/10 px-5 py-3 text-sm font-semibold text-white transition hover:bg-white/15"
@@ -133,23 +121,25 @@ export default function Footer() {
                 <div>
                   <p className="text-sm text-white/50">Phone</p>
                   <a
-                    href="tel:+263 78 285 6955"
+                    href={SITE.phoneHref}
                     className="mt-1 inline-block text-sm text-white/80 transition hover:text-amber-300"
                   >
-                    +263 78 285 6955
+                    {SITE.phone}
                   </a>
                 </div>
               </div>
 
               <div className="flex items-start gap-3">
-                <span className="mt-0.5 inline-flex h-10 w-10 items-center justify-center rounded-xl bg-white/10 text-amber-400"></span>
+                <span className="mt-0.5 inline-flex h-10 w-10 items-center justify-center rounded-xl bg-white/10 text-amber-400">
+                  <HiOutlineEnvelope className="text-lg" />
+                </span>
                 <div>
                   <p className="text-sm text-white/50">Email</p>
                   <a
-                    href="mailto:bookings@masukusafaris.com"
+                    href={`mailto:${SITE.email}`}
                     className="mt-1 inline-block text-sm text-white/80 transition hover:text-amber-300"
                   >
-                    bookings@masukusafaris.com
+                    {SITE.email}
                   </a>
                 </div>
               </div>
@@ -160,9 +150,7 @@ export default function Footer() {
                 </span>
                 <div>
                   <p className="text-sm text-white/50">Based In</p>
-                  <p className="mt-1 text-sm text-white/80">
-                    Victoria Falls, Zimbabwe
-                  </p>
+                  <p className="mt-1 text-sm text-white/80">{SITE.location}</p>
                 </div>
               </div>
             </div>
@@ -187,7 +175,7 @@ export default function Footer() {
 
       <div className="border-t border-white/10">
         <div className="mx-auto flex max-w-7xl flex-col gap-4 px-4 py-6 text-sm text-white/50 md:flex-row md:items-center md:justify-between md:px-6 lg:px-8">
-          <p>© 2026 Masuku Adventure Safaris. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} {SITE.name}. All rights reserved.</p>
           <p>Crafted for unforgettable safari experiences across Africa.</p>
         </div>
       </div>

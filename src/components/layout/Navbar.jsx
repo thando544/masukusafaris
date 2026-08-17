@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { HiOutlineMenuAlt3, HiOutlineX } from "react-icons/hi";
+import { FaWhatsapp } from "react-icons/fa";
+import { SITE } from "../../config/site";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -101,6 +103,16 @@ export default function Navbar() {
               ))}
             </ul>
 
+            <a
+              href={SITE.whatsapp}
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center justify-center gap-2 rounded-xl border border-white/20 bg-white/10 px-4 py-3 text-sm font-semibold text-white transition hover:bg-white/15"
+            >
+              <FaWhatsapp />
+              WhatsApp
+            </a>
+
             <Link
               to="/book"
               className="inline-flex items-center justify-center rounded-xl bg-amber-500 px-5 py-3 text-sm font-semibold text-black transition hover:bg-amber-400"
@@ -183,6 +195,17 @@ export default function Navbar() {
           >
             Book Now
           </Link>
+
+          <a
+            href={SITE.whatsapp}
+            target="_blank"
+            rel="noreferrer"
+            onClick={() => setOpen(false)}
+            className="mt-3 inline-flex w-full items-center justify-center gap-2 rounded-2xl bg-[#25D366] px-5 py-3.5 text-sm font-semibold text-white transition hover:bg-[#1ebe5d]"
+          >
+            <FaWhatsapp />
+            WhatsApp {SITE.phone}
+          </a>
 
           <Link
             to="/contact"

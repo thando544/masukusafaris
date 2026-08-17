@@ -3,7 +3,7 @@ import packages from "../../data/packages";
 
 export default function PackagesPreview() {
   return (
-    <section id="packages" className="bg-[#fcfaf6] py-20 md:py-28">
+    <section id="packages" className="bg-[#f6f1e8] py-20 md:py-28">
       <div className="mx-auto max-w-7xl px-4 md:px-6 lg:px-8">
         <div className="mb-12 flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
           <div className="max-w-3xl">
@@ -41,7 +41,7 @@ export default function PackagesPreview() {
                 <img
                   src={pkg.image}
                   alt={pkg.title}
-                  className="h-70ll object-cover transition duration-700 group-hover:scale-105 md:h-80"
+                  className="h-72 w-full object-cover transition duration-700 group-hover:scale-105 md:h-80"
                 />
                 <div className="absolute inset-0 bg-linear-to-t from-black/60 via-black/10 to-transparent" />
 

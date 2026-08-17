@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 export default function CTASection() {
   return (
-    <section className="bg-white py-20">
+    <section className="bg-[#f6f1e8] py-20">
       <div className="mx-auto max-w-7xl px-4 md:px-6 lg:px-8">
         <div className="rounded-3xl bg-zinc-950 px-8 py-14 text-white md:px-12">
           <div className="max-w-3xl">
@@ -17,7 +17,7 @@ export default function CTASection() {
 
             <Link
               to="/book"
-              className="mt-8 inline-flex rounded-md bg-amber-500 px-6 py-3 text-sm font-semibold text-black transition hover:bg-amber-400"
+              className="mt-8 inline-flex rounded-xl bg-amber-500 px-6 py-3 text-sm font-semibold text-black transition hover:bg-amber-400"
             >
               Book Now
             </Link>

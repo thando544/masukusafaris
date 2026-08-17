@@ -4,14 +4,14 @@ export default function HeroSection() {
   return (
     <section className="relative min-h-screen overflow-hidden">
       <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat scale-105"
+        className="hero-media absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
           backgroundImage:
             "url('https://res.cloudinary.com/dnqjax5ut/image/upload/q_auto/f_auto/v1775294136/masukusafaris.com8_kjougq.jpg')",
         }}
       />
 
-      <div className="absolute inset-0 bg-black/60" />
+      <div className="hero-veil absolute inset-0" />
 
       {/* Content */}
       <div className="relative mx-auto flex min-h-screen max-w-7xl items-center px-4 md:px-6 lg:px-8">
@@ -30,6 +30,17 @@ export default function HeroSection() {
             craft your perfect African adventure with comfort, authenticity, and
             unforgettable moments.
           </p>
+
+          <div className="mt-8 flex flex-wrap gap-2">
+            {["Victoria Falls", "Chobe", "Okavango Delta", "Hwange"].map((place) => (
+              <span
+                key={place}
+                className="rounded-full border border-white/20 bg-white/10 px-3 py-1.5 text-xs tracking-[0.18em] text-white/85 uppercase"
+              >
+                {place}
+              </span>
+            ))}
+          </div>
 
           {/* Buttons */}
           <div className="mt-10 flex flex-col gap-4 sm:flex-row">

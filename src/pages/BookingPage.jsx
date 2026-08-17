@@ -4,6 +4,7 @@ import Footer from "../components/layout/Footer";
 import BookingForm from "../components/booking/BookingForm";
 import packages from "../data/packages";
 import activities from "../data/activities";
+import { SITE } from "../config/site";
 import { FaEnvelope, FaPhoneAlt, FaWhatsapp } from "react-icons/fa";
 
 export default function BookingPage() {
@@ -30,11 +31,12 @@ export default function BookingPage() {
 
       <main>
         <section className="relative h-[60vh] min-h-105 overflow-hidden">
-          <div
-            className="absolute inset-0 bg-cover bg-center"
-            style={{ backgroundImage: "url('/img/gallery/4.jpg')" }}
+          <img
+            src="/images/sunrise.jpeg"
+            alt="Safari sunrise"
+            className="hero-media absolute inset-0 h-full w-full object-cover"
           />
-          <div className="absolute inset-0 bg-black/50" />
+          <div className="hero-veil absolute inset-0" />
 
           <div className="relative mx-auto flex h-full max-w-7xl items-end px-4 pb-16 md:px-6 lg:px-8">
             <div className="max-w-3xl pt-24 text-white">
@@ -148,7 +150,9 @@ export default function BookingPage() {
                         <FaPhoneAlt className="text-zinc-700" />
                         <div>
                           <p className="text-sm text-zinc-500">Call Us</p>
-                          <p className="font-medium text-zinc-900">+263 00 000 0000</p>
+                          <a href={SITE.phoneHref} className="font-medium text-zinc-900">
+                            {SITE.phone}
+                          </a>
                         </div>
                       </div>
                     </div>
@@ -158,15 +162,18 @@ export default function BookingPage() {
                         <FaEnvelope className="text-zinc-700" />
                         <div>
                           <p className="text-sm text-zinc-500">Email</p>
-                          <p className="font-medium text-zinc-900">
-                            bookings@masukusafaris.com
-                          </p>
+                          <a
+                            href={`mailto:${SITE.email}`}
+                            className="font-medium text-zinc-900"
+                          >
+                            {SITE.email}
+                          </a>
                         </div>
                       </div>
                     </div>
 
                     <a
-                      href="https://wa.me/263000000000"
+                      href={SITE.whatsapp}
                       target="_blank"
                       rel="noreferrer"
                       className="flex items-center justify-center gap-3 rounded-2xl bg-green-600 px-5 py-4 text-sm font-semibold text-white transition hover:bg-green-700"

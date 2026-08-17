@@ -25,11 +25,12 @@ export default function Activities() {
 
       <main>
         <section className="relative h-[65vh] min-h-115 overflow-hidden">
-          <div
-            className="absolute inset-0 bg-cover bg-center"
-            style={{ backgroundImage: "url('/img/gallery/4.jpg')" }}
+          <img
+            src="/images/spot.jpg"
+            alt="Wildlife safari experience"
+            className="hero-media absolute inset-0 h-full w-full object-cover"
           />
-          <div className="absolute inset-0 bg-black/45" />
+          <div className="hero-veil absolute inset-0" />
 
           <div className="relative mx-auto flex h-full max-w-7xl items-end px-4 pb-16 md:px-6 lg:px-8">
             <div className="max-w-3xl pt-24 text-white">
