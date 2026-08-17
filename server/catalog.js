@@ -1,5 +1,5 @@
-import packages from "../../src/data/packages.js";
-import activities from "../../src/data/activities.js";
+import packages from "../src/data/packages.js";
+import activities from "../src/data/activities.js";
 
 export function toPublicPackage(item) {
   return {

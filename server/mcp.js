@@ -1,10 +1,5 @@
-import { handleOptions, readBody, sendJson, setCors } from "./_lib/http.js";
-import {
-  getActivity,
-  getPackage,
-  listActivities,
-  listPackages,
-} from "./_lib/catalog.js";
+import { readBody, sendJson, setCors } from "./http.js";
+import { getActivity, getPackage, listActivities, listPackages } from "./catalog.js";
 
 const SERVER_INFO = {
   name: "masuku-safaris",
@@ -138,11 +133,7 @@ async function handleRpc(message) {
   }
 
   if (message.method === "tools/list") {
-    return {
-      jsonrpc: "2.0",
-      id: message.id,
-      result: { tools: TOOLS },
-    };
+    return { jsonrpc: "2.0", id: message.id, result: { tools: TOOLS } };
   }
 
   if (message.method === "tools/call") {
@@ -174,9 +165,7 @@ async function handleRpc(message) {
   return rpcError(message.id, -32601, `Method not found: ${message.method}`);
 }
 
-export default async function handler(req, res) {
-  if (handleOptions(req, res)) return;
-
+export async function handleMcp(req, res) {
   if (req.method === "GET") {
     sendJson(res, 200, {
       serverInfo: SERVER_INFO,
