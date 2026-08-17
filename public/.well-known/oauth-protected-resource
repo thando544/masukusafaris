@@ -1,14 +1,27 @@
 {
-  "resource": "https://masukusafaris.com/",
+  "resource": "https://www.masukusafaris.com",
   "resource_name": "Masuku Adventure Safaris",
-  "resource_documentation": "https://masukusafaris.com/docs/api",
-  "authorization_servers": ["https://masukusafaris.com"],
-  "bearer_methods_supported": ["header"],
+  "resource_documentation": "https://www.masukusafaris.com/docs/api",
+  "authorization_servers": [
+    "https://www.masukusafaris.com",
+    "https://masukusafaris.com"
+  ],
+  "bearer_methods_supported": [
+    "header"
+  ],
   "scopes_supported": [
     "packages.read",
     "activities.read",
     "inquiries.write",
     "bookings.write"
   ],
-  "resource_signing_alg_values_supported": ["RS256", "HS256"]
+  "resource_signing_alg_values_supported": [
+    "RS256",
+    "HS256"
+  ],
+  "token_endpoint_auth_methods_supported": [
+    "client_secret_basic",
+    "client_secret_post",
+    "none"
+  ]
 }

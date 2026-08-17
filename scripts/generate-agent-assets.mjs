@@ -5,6 +5,8 @@ import { fileURLToPath } from "node:url";
 import packages from "../src/data/packages.js";
 import activities from "../src/data/activities.js";
 import { SITE, SITE_ORIGIN } from "./site.mjs";
+import { dnsAidZoneFile } from "./dns-aid.mjs";
+import { oauthProtectedResourceMetadata } from "../server/oauth-metadata.js";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const publicDir = join(root, "public");
@@ -342,6 +344,17 @@ write(
   ) + "\n"
 );
 
+const wwwOrigin = (() => {
+  const siteUrl = new URL(SITE_ORIGIN);
+  return `${siteUrl.protocol}//www.${siteUrl.hostname.replace(/^www\./, "")}`;
+})();
+write(
+  ".well-known/oauth-protected-resource",
+  JSON.stringify(oauthProtectedResourceMetadata(wwwOrigin), null, 2) + "\n"
+);
+
+write("dns-aid.zone", dnsAidZoneFile());
+
 console.log(
-  `Generated sitemap (${urls.length} URLs), markdown pages, API catalogs, and agent-skills index.`
+  `Generated sitemap (${urls.length} URLs), markdown pages, API catalogs, OAuth resource metadata, DNS-AID zone, and agent-skills index.`
 );

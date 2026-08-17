@@ -1,3 +1,8 @@
+import {
+  oauthProtectedResourceMetadata,
+  requestOrigin,
+} from "./server/oauth-metadata.js";
+
 const LINK_HEADER = [
   '</.well-known/api-catalog>; rel="api-catalog"; type="application/linkset+json"',
   '</api/openapi.json>; rel="service-desc"; type="application/json"',
@@ -27,6 +32,8 @@ export const config = {
     "/contact",
     "/book",
     "/docs/api",
+    "/.well-known/oauth-protected-resource",
+    "/.well-known/oauth-protected-resource/:path*",
   ],
 };
 
@@ -58,8 +65,35 @@ function markdownPathFor(pathname) {
   return null;
 }
 
+function oauthProtectedResourcePath(pathname) {
+  const prefix = "/.well-known/oauth-protected-resource";
+  if (pathname === prefix || pathname === `${prefix}/`) return "";
+  if (pathname.startsWith(`${prefix}/`)) {
+    return `/${pathname.slice(prefix.length + 1).replace(/\/+$/, "")}`;
+  }
+  return null;
+}
+
 export default async function middleware(request) {
   const url = new URL(request.url);
+  const extraPath = oauthProtectedResourcePath(url.pathname);
+  if (extraPath !== null) {
+    const origin = requestOrigin(url);
+    const body = JSON.stringify(
+      oauthProtectedResourceMetadata(origin, extraPath),
+      null,
+      2
+    );
+    return new Response(body, {
+      status: 200,
+      headers: {
+        "Content-Type": "application/json; charset=utf-8",
+        "Access-Control-Allow-Origin": "*",
+        "Cache-Control": "public, max-age=300",
+      },
+    });
+  }
+
   const headers = new Headers();
   headers.set("Link", LINK_HEADER);
   headers.set("Vary", "Accept");

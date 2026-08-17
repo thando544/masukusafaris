@@ -1,3 +1,5 @@
+import { requestOrigin, wwwAuthenticate } from "./oauth-metadata.js";
+
 export const CORS_HEADERS = {
   "Access-Control-Allow-Origin": "*",
   "Access-Control-Allow-Methods": "GET, POST, OPTIONS, HEAD",
@@ -12,10 +14,13 @@ export function setCors(res) {
   }
 }
 
-export function sendJson(res, status, data, extraHeaders = {}) {
+export function sendJson(res, status, data, extraHeaders = {}, req = null) {
   setCors(res);
   res.statusCode = status;
   res.setHeader("Content-Type", "application/json; charset=utf-8");
+  if (status === 401 && !extraHeaders["WWW-Authenticate"] && req) {
+    extraHeaders["WWW-Authenticate"] = wwwAuthenticate(requestOrigin(req));
+  }
   for (const [key, value] of Object.entries(extraHeaders)) {
     res.setHeader(key, value);
   }

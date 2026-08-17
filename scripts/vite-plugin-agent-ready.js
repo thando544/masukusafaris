@@ -1,6 +1,10 @@
 import { execFileSync } from "node:child_process";
 import { readFileSync } from "node:fs";
 import { join } from "node:path";
+import {
+  oauthProtectedResourceMetadata,
+  requestOrigin,
+} from "../server/oauth-metadata.js";
 
 const LINK_HEADER = [
   '</.well-known/api-catalog>; rel="api-catalog"; type="application/linkset+json"',
@@ -66,6 +70,27 @@ export default function agentReadyPlugin() {
 
         if (pathname === "/" || pathname === "") {
           res.setHeader("Link", LINK_HEADER);
+        }
+
+        if (
+          req.method === "GET" &&
+          (pathname === "/.well-known/oauth-protected-resource" ||
+            pathname.startsWith("/.well-known/oauth-protected-resource/"))
+        ) {
+          const extra =
+            pathname === "/.well-known/oauth-protected-resource"
+              ? ""
+              : pathname.slice("/.well-known/oauth-protected-resource".length);
+          const body = JSON.stringify(
+            oauthProtectedResourceMetadata(requestOrigin(req), extra),
+            null,
+            2
+          );
+          res.statusCode = 200;
+          res.setHeader("Content-Type", "application/json; charset=utf-8");
+          res.setHeader("Access-Control-Allow-Origin", "*");
+          res.end(body);
+          return;
         }
 
         const typed = CONTENT_TYPES[pathname];

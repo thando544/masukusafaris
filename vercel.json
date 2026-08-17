@@ -76,6 +76,13 @@
       ]
     },
     {
+      "source": "/.well-known/oauth-protected-resource/(.*)",
+      "headers": [
+        { "key": "Content-Type", "value": "application/json; charset=utf-8" },
+        { "key": "Access-Control-Allow-Origin", "value": "*" }
+      ]
+    },
+    {
       "source": "/.well-known/mcp.json",
       "headers": [
         { "key": "Content-Type", "value": "application/json; charset=utf-8" },
@@ -121,6 +128,14 @@
   ],
   "rewrites": [
     { "source": "/docs/api", "destination": "/docs/api.html" },
+    {
+      "source": "/.well-known/oauth-protected-resource",
+      "destination": "/api/well-known/oauth-protected-resource"
+    },
+    {
+      "source": "/.well-known/oauth-protected-resource/:path*",
+      "destination": "/api/well-known/oauth-protected-resource/:path*"
+    },
     {
       "source": "/((?!api/|docs/|\\.well-known/|robots\\.txt|sitemap\\.xml|auth\\.md|llms\\.txt|index\\.md|dns-aid\\.zone).*)",
       "destination": "/index.html"

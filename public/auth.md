@@ -22,8 +22,11 @@ GET https://masukusafaris.com/.well-known/oauth-protected-resource
 
 ```json
 {
-  "resource": "https://masukusafaris.com/",
-  "authorization_servers": ["https://masukusafaris.com"],
+  "resource": "https://www.masukusafaris.com",
+  "authorization_servers": [
+    "https://masukusafaris.com",
+    "https://www.masukusafaris.com"
+  ],
   "scopes_supported": ["packages.read", "activities.read", "inquiries.write", "bookings.write"],
   "bearer_methods_supported": ["header"]
 }

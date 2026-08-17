@@ -9,7 +9,8 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "generate:agent": "node scripts/generate-agent-assets.mjs"
+    "generate:agent": "node scripts/generate-agent-assets.mjs",
+    "dns:aid": "node scripts/dns-aid.mjs"
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",

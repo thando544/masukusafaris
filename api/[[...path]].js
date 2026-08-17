@@ -6,6 +6,10 @@ import {
   listPackages,
 } from "../server/catalog.js";
 import { handleMcp } from "../server/mcp.js";
+import {
+  oauthProtectedResourceMetadata,
+  requestOrigin,
+} from "../server/oauth-metadata.js";
 
 function routePath(req) {
   const raw = req.query?.path;
@@ -116,6 +120,12 @@ export default async function handler(req, res) {
 
   const path = routePath(req);
   const method = req.method;
+
+  if (path === "well-known/oauth-protected-resource" || path.startsWith("well-known/oauth-protected-resource/")) {
+    const extra = path.slice("well-known/oauth-protected-resource".length);
+    sendJson(res, 200, oauthProtectedResourceMetadata(requestOrigin(req), extra));
+    return;
+  }
 
   if (path === "health" && method === "GET") {
     sendJson(res, 200, {
