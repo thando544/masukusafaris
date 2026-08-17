@@ -20,7 +20,17 @@ h3,
   letter-spacing: -0.02em;
 }
 
+img {
+  object-fit: cover;
+  object-position: center;
+}
+
 .hero-media {
+  object-fit: cover;
+  object-position: center;
+  max-width: none;
+  background-size: cover;
+  background-position: center;
   animation: kenburns 24s ease-out forwards;
 }
 

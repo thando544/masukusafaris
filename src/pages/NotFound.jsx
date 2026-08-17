@@ -12,7 +12,7 @@ export default function NotFound() {
           <img
             src="/images/hero.jpg"
             alt="African safari landscape"
-            className="hero-media absolute inset-0 h-full w-full object-cover"
+            className="hero-media absolute inset-0 h-full w-full max-w-none object-cover object-center"
           />
           <div className="hero-veil absolute inset-0" />
           <div className="relative mx-auto flex min-h-screen max-w-3xl flex-col items-start justify-end px-4 pb-24 pt-32 md:px-6">

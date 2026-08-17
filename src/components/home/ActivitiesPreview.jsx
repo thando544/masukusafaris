@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import activities from "../../data/activities";
+import Photo from "../common/Photo";
 
 export default function ActivitiesPreview() {
   return (
@@ -38,10 +39,11 @@ export default function ActivitiesPreview() {
               className="group flex h-full flex-col overflow-hidden rounded-[30px] border border-zinc-200 bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-2xl"
             >
               <div className="relative overflow-hidden">
-                <img
+                <Photo
                   src={activity.image}
                   alt={activity.title}
-                  className="h-65 w-full object-cover transition duration-700 group-hover:scale-105 md:h-75"
+                  ratio="aspect-16/10"
+                  imgClassName="transition duration-700 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-linear-to-t from-black/60 via-black/10 to-transparent" />
 

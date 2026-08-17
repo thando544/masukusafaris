@@ -1,3 +1,5 @@
+import Photo from "../common/Photo";
+
 export default function AboutPreview() {
   return (
     <section id="about" className="bg-white py-20 md:py-28">
@@ -53,10 +55,10 @@ export default function AboutPreview() {
 
         <div className="mt-14 grid gap-6 lg:grid-cols-2">
           <div className="relative overflow-hidden rounded-2xl">
-            <img
+            <Photo
               src="https://res.cloudinary.com/dnqjax5ut/image/upload/q_auto/f_auto/v1775329740/IMG-20260404-WA0024_mdcqi2.jpg"
               alt="Masuku Adventure team"
-              className="h-105 w-full object-cover"
+              ratio="aspect-4/3"
             />
             <a
               href="/about"
@@ -67,10 +69,10 @@ export default function AboutPreview() {
           </div>
 
           <div className="overflow-hidden rounded-2xl">
-            <img
+            <Photo
               src="https://res.cloudinary.com/dnqjax5ut/image/upload/q_auto/f_auto/v1775295641/masukusafaris.com_kqya0z.jpg"
               alt="Game drive"
-              className="h-105 w-full object-cover"
+              ratio="aspect-4/3"
             />
           </div>
         </div>

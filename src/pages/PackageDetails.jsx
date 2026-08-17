@@ -3,6 +3,7 @@ import packages from "../data/packages";
 import Navbar from "../components/layout/Navbar";
 import Footer from "../components/layout/Footer";
 import BookingForm from "../components/booking/BookingForm";
+import Photo from "../components/common/Photo";
 
 export default function PackageDetails() {
   const { slug } = useParams();
@@ -38,7 +39,7 @@ export default function PackageDetails() {
           <img
             src={selectedPackage.image}
             alt={selectedPackage.title}
-            className="absolute inset-0 h-full w-full object-cover"
+            className="absolute inset-0 h-full w-full max-w-none object-cover object-center"
           />
           <div className="absolute inset-0 bg-black/45" />
 
@@ -161,10 +162,11 @@ export default function PackageDetails() {
                         key={index}
                         className="group overflow-hidden rounded-2xl shadow-lg"
                       >
-                        <img
+                        <Photo
                           src={image}
                           alt={`${selectedPackage.title} ${index + 1}`}
-                          className="h-72 w-full object-cover transition duration-500 group-hover:scale-110"
+                          ratio="aspect-4/3"
+                          imgClassName="transition duration-500 group-hover:scale-110"
                         />
                       </div>
                     ))}

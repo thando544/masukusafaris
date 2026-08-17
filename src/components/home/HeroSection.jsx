@@ -3,12 +3,10 @@ import { Link } from "react-router-dom";
 export default function HeroSection() {
   return (
     <section className="relative min-h-screen overflow-hidden">
-      <div
-        className="hero-media absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{
-          backgroundImage:
-            "url('https://res.cloudinary.com/dnqjax5ut/image/upload/q_auto/f_auto/v1775294136/masukusafaris.com8_kjougq.jpg')",
-        }}
+      <img
+        src="https://res.cloudinary.com/dnqjax5ut/image/upload/q_auto/f_auto/v1775294136/masukusafaris.com8_kjougq.jpg"
+        alt="Safari landscape across Africa"
+        className="hero-media absolute inset-0 h-full w-full max-w-none object-cover object-center"
       />
 
       <div className="hero-veil absolute inset-0" />

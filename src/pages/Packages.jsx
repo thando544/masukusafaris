@@ -2,6 +2,7 @@ import Navbar from "../components/layout/Navbar";
 import Footer from "../components/layout/Footer";
 import packages from "../data/packages";
 import { Link } from "react-router-dom";
+import Photo from "../components/common/Photo";
 
 export default function Packages() {
   return (
@@ -13,7 +14,7 @@ export default function Packages() {
           <img
             src="/images/tanzania.jpeg"
             alt="Safari packages"
-            className="absolute inset-0 h-full w-full object-cover"
+            className="absolute inset-0 h-full w-full max-w-none object-cover object-center"
           />
           <div className="absolute inset-0 bg-black/50" />
 
@@ -69,10 +70,11 @@ export default function Packages() {
                   className="group flex h-full flex-col overflow-hidden rounded-[28px] border border-zinc-200 bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl"
                 >
                   <div className="relative overflow-hidden">
-                    <img
+                    <Photo
                       src={pkg.image}
                       alt={pkg.title}
-                      className="h-75 w-full object-cover transition duration-700 group-hover:scale-105 md:h-85"
+                      ratio="aspect-16/10"
+                      imgClassName="transition duration-700 group-hover:scale-105"
                     />
                     <div className="absolute inset-0 bg-linear-to-t from-black/65 via-black/20 to-transparent" />
 

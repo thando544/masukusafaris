@@ -14,7 +14,7 @@ export default function Contact() {
           <img
             src="/images/village.jpeg"
             alt="Victoria Falls and safari country"
-            className="hero-media absolute inset-0 h-full w-full object-cover"
+            className="hero-media absolute inset-0 h-full w-full max-w-none object-cover object-center"
           />
           <div className="hero-veil absolute inset-0" />
 

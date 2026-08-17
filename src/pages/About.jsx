@@ -1,6 +1,7 @@
 import Navbar from "../components/layout/Navbar";
 import Footer from "../components/layout/Footer";
 import { Link } from "react-router-dom";
+import Photo from "../components/common/Photo";
 import {
   FaCompass,
   FaGlobeAfrica,
@@ -56,7 +57,7 @@ export default function About() {
           <img
             src="/images/hero.jpg"
             alt="Masuku Adventure Safaris"
-            className="absolute inset-0 h-full w-full object-cover"
+            className="absolute inset-0 h-full w-full max-w-none object-cover object-center"
           />
           <div className="absolute inset-0 bg-black/50" />
 
@@ -139,10 +140,11 @@ export default function About() {
           <div className="mx-auto max-w-7xl px-4 md:px-6 lg:px-8">
             <div className="grid gap-8 lg:grid-cols-2">
               <div className="overflow-hidden rounded-4xl">
-                <img
+                <Photo
                   src="/images/lance.jpg"
                   alt="Safari landscape"
-                  className="h-130 w-full object-cover"
+                  ratio="aspect-4/3 lg:aspect-4/5"
+                  className="h-full min-h-80"
                 />
               </div>
 
@@ -186,24 +188,24 @@ export default function About() {
           <div className="mx-auto max-w-7xl px-4 md:px-6 lg:px-8">
             <div className="grid gap-6 md:grid-cols-3">
               <div className="overflow-hidden rounded-[28px]">
-                <img
+                <Photo
                   src="/images/spot.jpg"
                   alt="Wildlife safari"
-                  className="h-80 w-full object-cover"
+                  ratio="aspect-4/3"
                 />
               </div>
               <div className="overflow-hidden rounded-[28px]">
-                <img
+                <Photo
                   src="/images/zamb.jpeg"
                   alt="River experience"
-                  className="h-80 w-full object-cover"
+                  ratio="aspect-4/3"
                 />
               </div>
               <div className="overflow-hidden rounded-[28px]">
-                <img
+                <Photo
                   src="/images/club.jpg"
                   alt="Safari lodge"
-                  className="h-80 w-full object-cover"
+                  ratio="aspect-4/3"
                 />
               </div>
             </div>

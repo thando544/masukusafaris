@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Navbar from "../components/layout/Navbar";
 import Footer from "../components/layout/Footer";
 import activities from "../data/activities";
+import Photo from "../components/common/Photo";
 
 const filters = [
   { label: "All", value: "all" },
@@ -28,7 +29,7 @@ export default function Activities() {
           <img
             src="/images/spot.jpg"
             alt="Wildlife safari experience"
-            className="hero-media absolute inset-0 h-full w-full object-cover"
+            className="hero-media absolute inset-0 h-full w-full max-w-none object-cover object-center"
           />
           <div className="hero-veil absolute inset-0" />
 
@@ -89,10 +90,11 @@ export default function Activities() {
                   className="group block overflow-hidden rounded-3xl border border-zinc-200 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-lg"
                 >
                   <div className="overflow-hidden">
-                    <img
+                    <Photo
                       src={activity.image}
                       alt={activity.title}
-                      className="h-80 w-full object-cover transition duration-500 group-hover:scale-105"
+                      ratio="aspect-16/10"
+                      imgClassName="transition duration-500 group-hover:scale-105"
                     />
                   </div>
 

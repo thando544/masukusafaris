@@ -62,7 +62,7 @@ export default function Navbar() {
             <img
               src="/images/logo-white.png"
               alt="Masuku Adventure Safaris"
-              className="h-11 w-auto md:h-13"
+              className="h-11 w-auto object-contain object-left md:h-13"
             />
           </Link>
 

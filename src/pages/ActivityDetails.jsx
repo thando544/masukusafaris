@@ -38,7 +38,7 @@ export default function ActivityDetails() {
           <img
             src={selectedActivity.image}
             alt={selectedActivity.title}
-            className="absolute inset-0 h-full w-full object-cover"
+            className="absolute inset-0 h-full w-full max-w-none object-cover object-center"
           />
           <div className="absolute inset-0 bg-black/45" />
 

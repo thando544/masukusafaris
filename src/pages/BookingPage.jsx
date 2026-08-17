@@ -6,6 +6,7 @@ import packages from "../data/packages";
 import activities from "../data/activities";
 import { SITE } from "../config/site";
 import { FaEnvelope, FaPhoneAlt, FaWhatsapp } from "react-icons/fa";
+import Photo from "../components/common/Photo";
 
 export default function BookingPage() {
   const [bookingType, setBookingType] = useState("package");
@@ -34,7 +35,7 @@ export default function BookingPage() {
           <img
             src="/images/sunrise.jpeg"
             alt="Safari sunrise"
-            className="hero-media absolute inset-0 h-full w-full object-cover"
+            className="hero-media absolute inset-0 h-full w-full max-w-none object-cover object-center"
           />
           <div className="hero-veil absolute inset-0" />
 
@@ -120,10 +121,10 @@ export default function BookingPage() {
 
                   {selectedItem && (
                     <div className="mt-8 overflow-hidden rounded-2xl border border-zinc-200">
-                      <img
+                      <Photo
                         src={selectedItem.image}
                         alt={selectedItem.title}
-                        className="h-56 w-full object-cover"
+                        ratio="aspect-16/10"
                       />
                       <div className="p-5">
                         <h4 className="text-lg font-semibold text-zinc-900">

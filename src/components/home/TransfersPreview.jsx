@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { transfers } from "../../data/homeData";
+import Photo from "../common/Photo";
 
 export default function TransfersPreview() {
   return (
@@ -23,10 +24,11 @@ export default function TransfersPreview() {
 
         <div className="mt-12 grid gap-8 lg:grid-cols-12">
           <div className="overflow-hidden rounded-[28px] lg:col-span-5">
-            <img
+            <Photo
               src="/images/heli.jpg"
               alt="Safari transfer and scenic travel"
-              className="h-full min-h-80 w-full object-cover"
+              fill
+              className="aspect-4/3 min-h-80 lg:aspect-auto lg:min-h-full"
             />
           </div>
 

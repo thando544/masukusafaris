@@ -13,7 +13,7 @@ export default function CustomItinerary() {
           <img
             src="/images/walking.jpeg"
             alt="Tailor-made safari journey"
-            className="hero-media absolute inset-0 h-full w-full object-cover"
+            className="hero-media absolute inset-0 h-full w-full max-w-none object-cover object-center"
           />
           <div className="hero-veil absolute inset-0" />
           <div className="relative mx-auto flex h-full max-w-7xl items-end px-4 pb-16 md:px-6 lg:px-8">
