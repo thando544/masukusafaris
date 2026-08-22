@@ -60,13 +60,10 @@ export default function Navbar() {
             onClick={() => setOpen(false)}
           >
             <img
-              src="/images/culture-volt-logo-4k.png"
-              alt={SITE.name}
-              className="h-12 w-auto object-contain object-left md:h-14"
+              src="/images/logo-white.png"
+              alt="Masuku Adventure Safaris"
+              className="h-11 w-auto object-contain object-left md:h-13"
             />
-            <span className="ml-3 hidden max-w-[10rem] text-sm font-semibold leading-tight text-white sm:inline md:max-w-none md:text-base">
-              {SITE.name}
-            </span>
           </Link>
 
           <div className="hidden items-center gap-8 lg:flex">
