@@ -5,6 +5,7 @@ import Footer from "../components/layout/Footer";
 import activities from "../data/activities";
 import Photo from "../components/common/Photo";
 import HeroBanner from "../components/layout/HeroBanner";
+import SEO from "../components/seo/SEO";
 
 const filters = [
   { label: "All", value: "all" },
@@ -23,24 +24,30 @@ export default function Activities() {
 
   return (
     <div className="bg-white text-zinc-900">
+      <SEO
+        title="Things to Do in Victoria Falls & Chobe | Activities"
+        description="Book things to do in Victoria Falls and Chobe: Falls tours, sunset cruises, Chobe full-day trips, game drives, rafting, jet boat, bungee, and wildlife experiences with a local operator."
+        path="/activities"
+      />
       <Navbar />
 
       <main>
         <HeroBanner
           src="/images/rhino-3.jpeg"
-          alt="Wildlife safari experience"
+          alt="Things to do in Victoria Falls and Chobe"
           className="min-h-[65vh]"
         >
           <div className="max-w-3xl text-white">
               <p className="mb-3 text-sm uppercase tracking-[0.24em] text-white/75">
-                Your Experiences
+                Things to do in Victoria Falls
               </p>
               <h1 className="text-4xl font-semibold md:text-6xl">
-                Activities & Experiences
+                Victoria Falls & Chobe activities
               </h1>
               <p className="mt-5 max-w-2xl text-base leading-8 text-white/85 md:text-lg">
-                Discover unforgettable adventures, wildlife encounters, and guided
-                experiences across Victoria Falls, Chobe, and beyond.
+                Guided Falls walks, Zambezi sunset cruises, Chobe day trips,
+                game drives, rafting, jet boat, bungee, and wildlife encounters
+                you can add to any safari package.
               </p>
             </div>
         </HeroBanner>

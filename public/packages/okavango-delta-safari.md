@@ -1,4 +1,4 @@
-# Okavango Delta Safari
+# Okavango Delta Safari | Zimbabwe / Botswana Safari Package
 
 This elegant safari combines the grandeur of Victoria Falls, the wildlife-rich Chobe Riverfront, and the tranquil channels of the Okavango Delta. Guests enjoy stylish lodge stays, game drives, boat safaris, scenic flights, and all-inclusive safari hospitality in some of southern Africa’s most iconic destinations.
 

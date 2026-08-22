@@ -108,7 +108,7 @@ export default function BookingForm({
   }
 
   return (
-    <div className="rounded-3xl border border-zinc-200 bg-white p-6 shadow-sm md:p-8">
+    <div className="adsense-no-ads rounded-3xl border border-zinc-200 bg-white p-6 shadow-sm md:p-8">
       <div className="mb-8">
         <p className="mb-2 text-sm uppercase tracking-[0.2em] text-amber-700">
           Booking Request

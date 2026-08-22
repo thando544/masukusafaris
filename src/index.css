@@ -88,3 +88,12 @@ img {
 .swiper-button-next {
   color: #1c1917 !important;
 }
+
+body.adsense-no-ads .google-auto-placed,
+body.adsense-no-ads ins.adsbygoogle,
+.adsense-no-ads .google-auto-placed,
+.adsense-no-ads ins.adsbygoogle {
+  display: none !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+}

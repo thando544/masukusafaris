@@ -5,6 +5,7 @@ import Footer from "../components/layout/Footer";
 import BookingForm from "../components/booking/BookingForm";
 import Photo from "../components/common/Photo";
 import HeroBanner from "../components/layout/HeroBanner";
+import SEO, { tourJsonLd } from "../components/seo/SEO";
 
 export default function PackageDetails() {
   const { slug } = useParams();
@@ -13,6 +14,12 @@ export default function PackageDetails() {
   if (!selectedPackage) {
     return (
       <div className="min-h-screen bg-[#fcfaf6] text-zinc-900">
+        <SEO
+          title="Package not found"
+          description="That safari package is not available. Browse current African safari packages from Victoria Falls."
+          path={`/packages/${slug}`}
+          robots="noindex, follow"
+        />
         <Navbar />
         <main className="mx-auto max-w-7xl px-4 py-32 md:px-6 lg:px-8">
           <h1 className="text-3xl font-semibold">Package not found</h1>
@@ -33,17 +40,28 @@ export default function PackageDetails() {
 
   return (
     <div className="bg-[#fcfaf6] text-zinc-900">
+      <SEO
+        title={`${selectedPackage.title} | ${selectedPackage.location} Safari Package`}
+        description={
+          selectedPackage.shortDescription ||
+          `${selectedPackage.title} safari package from ${selectedPackage.location}.`
+        }
+        path={`/packages/${selectedPackage.slug}`}
+        image={selectedPackage.image}
+        type="article"
+        jsonLd={tourJsonLd(selectedPackage, "package")}
+      />
       <Navbar />
 
       <main>
         <HeroBanner
           src={selectedPackage.image}
-          alt={selectedPackage.title}
+          alt={`${selectedPackage.title} safari package in ${selectedPackage.location}`}
           className="min-h-[75vh]"
         >
           <div className="max-w-3xl text-white">
               <p className="mb-3 text-sm uppercase tracking-[0.24em] text-white/75">
-                Safari Package
+                {selectedPackage.location} safari package
               </p>
               <h1 className="text-4xl font-semibold md:text-6xl">
                 {selectedPackage.title}

@@ -1,4 +1,4 @@
-# Safari packages
+# African safari packages: Victoria Falls, Chobe, Okavango, Tanzania & Kenya
 
 ## [Okavango Delta Safari](https://masukusafaris.com/packages/okavango-delta-safari)
 

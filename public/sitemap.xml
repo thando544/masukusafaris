@@ -2,163 +2,181 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://masukusafaris.com/</loc>
-    <lastmod>2026-08-17</lastmod>
+    <lastmod>2026-08-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://masukusafaris.com/packages</loc>
-    <lastmod>2026-08-17</lastmod>
+    <lastmod>2026-08-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://masukusafaris.com/activities</loc>
-    <lastmod>2026-08-17</lastmod>
+    <lastmod>2026-08-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://masukusafaris.com/about</loc>
-    <lastmod>2026-08-17</lastmod>
+    <lastmod>2026-08-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://masukusafaris.com/contact</loc>
-    <lastmod>2026-08-17</lastmod>
+    <lastmod>2026-08-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://masukusafaris.com/book</loc>
-    <lastmod>2026-08-17</lastmod>
+    <lastmod>2026-08-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://masukusafaris.com/custom-itinerary</loc>
+    <lastmod>2026-08-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://masukusafaris.com/legal/privacy-policy</loc>
+    <lastmod>2026-08-22</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://masukusafaris.com/legal/terms-conditions</loc>
+    <lastmod>2026-08-22</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
     <loc>https://masukusafaris.com/docs/api</loc>
-    <lastmod>2026-08-17</lastmod>
+    <lastmod>2026-08-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://masukusafaris.com/auth.md</loc>
-    <lastmod>2026-08-17</lastmod>
+    <lastmod>2026-08-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.4</priority>
   </url>
   <url>
     <loc>https://masukusafaris.com/packages/okavango-delta-safari</loc>
-    <lastmod>2026-08-17</lastmod>
+    <lastmod>2026-08-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://masukusafaris.com/packages/7-days-tanzania-safari</loc>
-    <lastmod>2026-08-17</lastmod>
+    <lastmod>2026-08-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://masukusafaris.com/packages/4-days-zambia-livingstone-chobe-botswana</loc>
-    <lastmod>2026-08-17</lastmod>
+    <lastmod>2026-08-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://masukusafaris.com/packages/victoria-falls-chobe-premium-safari</loc>
-    <lastmod>2026-08-17</lastmod>
+    <lastmod>2026-08-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://masukusafaris.com/packages/9-days-around-zimbabwe-great-zimbabwe-matobo-hwange-victoria-falls</loc>
-    <lastmod>2026-08-17</lastmod>
+    <lastmod>2026-08-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://masukusafaris.com/packages/14-days-namibia-botswana-victoria-falls</loc>
-    <lastmod>2026-08-17</lastmod>
+    <lastmod>2026-08-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://masukusafaris.com/packages/9-days-victoria-falls-chobe-okavango-delta-safari</loc>
-    <lastmod>2026-08-17</lastmod>
+    <lastmod>2026-08-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://masukusafaris.com/packages/7-days-kenya-amboseli-masai-mara</loc>
-    <lastmod>2026-08-17</lastmod>
+    <lastmod>2026-08-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://masukusafaris.com/packages/13-days-kruger-matobo-hwange-victoria-falls</loc>
-    <lastmod>2026-08-17</lastmod>
+    <lastmod>2026-08-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://masukusafaris.com/activities/elephant-and-cheetah-experience</loc>
-    <lastmod>2026-08-17</lastmod>
+    <lastmod>2026-08-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://masukusafaris.com/activities/non-private-safari-game-drive</loc>
-    <lastmod>2026-08-17</lastmod>
+    <lastmod>2026-08-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://masukusafaris.com/activities/chobe-full-day-trip</loc>
-    <lastmod>2026-08-17</lastmod>
+    <lastmod>2026-08-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://masukusafaris.com/activities/victoria-falls-jet-boat-ride</loc>
-    <lastmod>2026-08-17</lastmod>
+    <lastmod>2026-08-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://masukusafaris.com/activities/white-water-rafting</loc>
-    <lastmod>2026-08-17</lastmod>
+    <lastmod>2026-08-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://masukusafaris.com/activities/tour-the-victoria-falls-zimbabwe-zambia-combined</loc>
-    <lastmod>2026-08-17</lastmod>
+    <lastmod>2026-08-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://masukusafaris.com/activities/sunset-cruise</loc>
-    <lastmod>2026-08-17</lastmod>
+    <lastmod>2026-08-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://masukusafaris.com/activities/night-game-drive-and-bush-dinner</loc>
-    <lastmod>2026-08-17</lastmod>
+    <lastmod>2026-08-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://masukusafaris.com/activities/victoria-falls-bungee-jump</loc>
-    <lastmod>2026-08-17</lastmod>
+    <lastmod>2026-08-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://masukusafaris.com/activities/victoria-falls-quad-biking-adventure</loc>
-    <lastmod>2026-08-17</lastmod>
+    <lastmod>2026-08-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>

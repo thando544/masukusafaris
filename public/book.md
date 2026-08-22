@@ -1,6 +1,6 @@
-# Book with Masuku Adventure Safaris
+# Book an African safari package or Victoria Falls activity
 
-Request a safari package or activity. Staff confirm availability and pricing.
+Request a current safari package or Victoria Falls / Chobe activity. Staff confirm lodge space, park fees, and transfers.
 
 - Form: https://masukusafaris.com/book
 - API: POST https://masukusafaris.com/api/inquiries

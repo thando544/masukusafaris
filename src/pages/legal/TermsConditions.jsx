@@ -2,10 +2,16 @@ import { Link } from "react-router-dom";
 import Navbar from "../../components/layout/Navbar";
 import Footer from "../../components/layout/Footer";
 import { SITE } from "../../config/site";
+import SEO from "../../components/seo/SEO";
 
 export default function TermsConditions() {
   return (
     <div className="bg-[#f6f1e8] text-zinc-900">
+      <SEO
+        title="Terms & Conditions"
+        description={`Booking terms for ${SITE.name} safari packages, activities, and transfers from Victoria Falls.`}
+        path="/legal/terms-conditions"
+      />
       <Navbar />
       <main className="mx-auto max-w-3xl px-4 pb-24 pt-32 md:px-6">
         <p className="text-xs font-semibold uppercase tracking-[0.28em] text-amber-700">

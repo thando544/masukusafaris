@@ -4,27 +4,33 @@ import packages from "../data/packages";
 import { Link } from "react-router-dom";
 import Photo from "../components/common/Photo";
 import HeroBanner from "../components/layout/HeroBanner";
+import SEO from "../components/seo/SEO";
 
 export default function Packages() {
   return (
     <div className="bg-[#fcfaf6] text-zinc-900">
+      <SEO
+        title="African Safari Packages | Victoria Falls, Chobe, Okavango, Tanzania & Kenya"
+        description="Compare safari packages from a Victoria Falls operator: Okavango Delta, Chobe, around Zimbabwe, Tanzania Great Migration, Kenya Masai Mara, Namibia, and Kruger itineraries with prices and day-by-day plans."
+        path="/packages"
+      />
       <Navbar />
 
       <main>
-        <HeroBanner src="/images/tanzaniCover.jpeg" alt="Safari packages">
+        <HeroBanner src="/images/tanzaniCover.jpeg" alt="African safari packages from Victoria Falls">
           <div className="max-w-4xl text-white">
               <p className="mb-4 text-xs font-semibold uppercase tracking-[0.28em] text-white/75">
-                Signature Safari Journeys
+                African safari packages
               </p>
 
               <h1 className="text-4xl font-semibold leading-tight md:text-6xl lg:text-7xl">
-                Curated Safari Packages Across Africa
+                Safari packages for Victoria Falls, Botswana, Tanzania, Kenya & more
               </h1>
 
               <p className="mt-6 max-w-2xl text-base leading-8 text-white/85 md:text-lg">
-                Explore premium multi-day journeys designed around wildlife,
-                breathtaking landscapes, comfort, and unforgettable safari
-                experiences.
+                Priced multi-country itineraries with lodges, game drives, and
+                transfers. These are the journeys we sell now — not a generic
+                Africa catalog.
               </p>
             </div>
         </HeroBanner>
@@ -38,13 +44,14 @@ export default function Packages() {
                 </p>
 
                 <h2 className="text-3xl font-semibold tracking-tight text-zinc-950 md:text-5xl">
-                  Choose Your Next Journey
+                  Destinations we sell this season
                 </h2>
 
                 <p className="mt-4 text-base leading-8 text-zinc-600 md:text-lg">
-                  Browse our collection of safari packages and open each journey
-                  to explore the itinerary, gallery, inclusions, and booking
-                  details.
+                  Victoria Falls and Chobe short breaks, Okavango Delta luxury
+                  weeks, 9 days around Zimbabwe (Great Zimbabwe, Matobo, Hwange),
+                  Tanzania Great Migration and Ngorongoro, Kenya Amboseli and
+                  Masai Mara, Namibia to Victoria Falls, and Kruger crossings.
                 </p>
               </div>
 

@@ -4,10 +4,16 @@ import InquiryForm from "../components/common/InquiryForm";
 import { SITE } from "../config/site";
 import { Link } from "react-router-dom";
 import HeroBanner from "../components/layout/HeroBanner";
+import SEO from "../components/seo/SEO";
 
 export default function CustomItinerary() {
   return (
     <div className="bg-[#f6f1e8] text-zinc-900">
+      <SEO
+        title="Custom African Safari Itinerary | Victoria Falls Planner"
+        description="Request a tailor-made African safari itinerary from Victoria Falls: Zimbabwe, Botswana, Zambia, Tanzania, Kenya, Namibia, or a multi-country crossing."
+        path="/custom-itinerary"
+      />
       <Navbar />
       <main>
         <HeroBanner

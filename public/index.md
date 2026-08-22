@@ -1,6 +1,6 @@
-# Masuku Adventure Safaris
+# African Safari Packages from Victoria Falls | Masuku Adventure Safaris
 
-Curated safari packages, activities, and transfers across Zimbabwe, Botswana, Zambia, Tanzania, Kenya, Namibia, and South Africa.
+Book African safari packages from Victoria Falls: Zimbabwe, Botswana, Zambia, Tanzania, Kenya, Namibia, and South Africa. Local operator for Chobe, Okavango, Hwange, Great Migration, and Masai Mara trips.
 
 Based in Victoria Falls, Zimbabwe.
 

@@ -1,4 +1,4 @@
-# 9 Days Victoria Falls, Chobe & Okavango Delta Safari
+# 9 Days Victoria Falls, Chobe & Okavango Delta Safari | Zimbabwe / Botswana Safari Package
 
 This 9-day safari is designed for travelers who want to combine iconic natural wonders, rich wildlife experiences, scenic overland travel, and the unique waterways of the Okavango Delta in one seamless journey. From the mist of Victoria Falls to Chobe’s elephants, the character of Elephant Sands, the open beauty of Gweta, and the breathtaking Delta flight from Maun, this itinerary offers a well-rounded and unforgettable safari through Zimbabwe and Botswana.
 

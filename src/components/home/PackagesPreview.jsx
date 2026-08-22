@@ -15,9 +15,10 @@ export default function PackagesPreview() {
               Featured Safari Packages
             </h2>
             <p className="mt-4 text-base leading-8 text-zinc-600 md:text-lg">
-              Explore beautifully curated safari journeys designed around
-              wildlife, scenery, comfort, and unforgettable African travel
-              experiences.
+              Priced multi-day itineraries for Victoria Falls and Chobe, the
+              Okavango Delta, around Zimbabwe, Tanzania’s Great Migration,
+              Kenya’s Masai Mara, Namibia, and Kruger. Open a package for the
+              day-by-day plan and inclusions.
             </p>
           </div>
 

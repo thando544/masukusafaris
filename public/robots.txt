@@ -15,6 +15,7 @@ Allow: /.well-known/
 Allow: /dns-aid.zone
 Allow: /llms.txt
 Allow: /sitemap.xml
+Allow: /ads.txt
 Disallow: /api/oauth/
 Disallow: /api/agent/
 Content-Signal: ai-train=no, search=yes, ai-input=yes

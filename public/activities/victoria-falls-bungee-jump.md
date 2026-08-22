@@ -1,4 +1,4 @@
-# Victoria Falls Bungee Jump
+# Victoria Falls Bungee Jump | Things to Do in Victoria Falls Bridge
 
 Perfect for thrill-seekers, the Victoria Falls Bungee Jump is one of the most iconic adventure activities in the region.
 

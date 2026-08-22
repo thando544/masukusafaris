@@ -155,6 +155,28 @@ export default function Footer() {
               </div>
             </div>
 
+            <div className="mt-8 space-y-3 text-sm">
+              <p className="font-semibold uppercase tracking-[0.22em] text-white/50">
+                Profiles
+              </p>
+              <a
+                href={SITE.safariBookings}
+                target="_blank"
+                rel="noreferrer"
+                className="block text-white/75 transition hover:text-amber-300"
+              >
+                SafariBookings
+              </a>
+              <a
+                href={SITE.googleMaps}
+                target="_blank"
+                rel="noreferrer"
+                className="block text-white/75 transition hover:text-amber-300"
+              >
+                Google Maps
+              </a>
+            </div>
+
             <div className="mt-8 flex items-center gap-3">
               {socialLinks.map((item) => (
                 <a
@@ -176,7 +198,17 @@ export default function Footer() {
       <div className="border-t border-white/10">
         <div className="mx-auto flex max-w-7xl flex-col gap-4 px-4 py-6 text-sm text-white/50 md:flex-row md:items-center md:justify-between md:px-6 lg:px-8">
           <p>© {new Date().getFullYear()} {SITE.name}. All rights reserved.</p>
-          <p>Crafted for unforgettable safari experiences across Africa.</p>
+          <p>
+            <Link to="/legal/privacy-policy" className="hover:text-amber-300">
+              Privacy
+            </Link>
+            {" · "}
+            <Link to="/legal/terms-conditions" className="hover:text-amber-300">
+              Terms
+            </Link>
+            {" · "}
+            Ads by Google may appear on content pages.
+          </p>
         </div>
       </div>
     </footer>

@@ -1,4 +1,4 @@
-# White Water Rafting
+# White Water Rafting | Things to Do in Victoria Falls
 
 White water rafting offers an adrenaline-packed day on the river for guests looking for action and unforgettable adventure.
 

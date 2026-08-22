@@ -85,6 +85,9 @@ const staticPages = [
   { path: "/about", changefreq: "monthly", priority: "0.7" },
   { path: "/contact", changefreq: "monthly", priority: "0.7" },
   { path: "/book", changefreq: "monthly", priority: "0.8" },
+  { path: "/custom-itinerary", changefreq: "monthly", priority: "0.8" },
+  { path: "/legal/privacy-policy", changefreq: "yearly", priority: "0.3" },
+  { path: "/legal/terms-conditions", changefreq: "yearly", priority: "0.3" },
   { path: "/docs/api", changefreq: "monthly", priority: "0.5" },
   { path: "/auth.md", changefreq: "monthly", priority: "0.4" },
 ];
@@ -138,7 +141,7 @@ write("api/activities.json", JSON.stringify({ activities: activityList }, null, 
 
 write(
   "index.md",
-  `# ${SITE.name}
+  `# African Safari Packages from Victoria Falls | ${SITE.name}
 
 ${SITE.description}
 
@@ -168,7 +171,7 @@ write(
   "about.md",
   `# About ${SITE.name}
 
-Masuku Adventure Safaris was built around one idea: travel in Africa should feel inspiring, seamless, and memorable. Whether a guest is exploring Victoria Falls, cruising through Chobe, witnessing the Great Migration, or heading into the Masai Mara, every journey deserves thoughtful planning.
+Masuku Adventure Safaris is a safari operator based in Victoria Falls, Zimbabwe. We plan the packages we sell: Victoria Falls and Chobe, Okavango Delta, around Zimbabwe, Tanzania Great Migration, Kenya Masai Mara, Namibia, and Kruger crossings.
 
 We help guests mix accommodation, activities, transfers, and multi-day safari packages from the first inquiry to the last day of the trip.
 
@@ -193,9 +196,9 @@ Send inquiries at ${SITE_ORIGIN}/contact or POST ${SITE_ORIGIN}/api/inquiries
 
 write(
   "book.md",
-  `# Book with ${SITE.name}
+  `# Book an African safari package or Victoria Falls activity
 
-Request a safari package or activity. Staff confirm availability and pricing.
+Request a current safari package or Victoria Falls / Chobe activity. Staff confirm lodge space, park fees, and transfers.
 
 - Form: ${SITE_ORIGIN}/book
 - API: POST ${SITE_ORIGIN}/api/inquiries
@@ -209,7 +212,7 @@ Activities: ${SITE_ORIGIN}/activities
 
 write(
   "packages.md",
-  `# Safari packages
+  `# African safari packages: Victoria Falls, Chobe, Okavango, Tanzania & Kenya
 
 ${packageList
     .map(
@@ -228,7 +231,7 @@ ${item.shortDescription}
 
 write(
   "activities.md",
-  `# Activities and experiences
+  `# Things to do in Victoria Falls and Chobe
 
 ${activityList
     .map(
@@ -258,7 +261,7 @@ ${(day.details || []).map((line) => `- ${line}`).join("\n")}`
 
   write(
     `packages/${item.slug}.md`,
-    `# ${item.title}
+    `# ${item.title} | ${item.location} Safari Package
 
 ${item.description}
 
@@ -288,7 +291,7 @@ ${itinerary}
 for (const item of activityList) {
   write(
     `activities/${item.slug}.md`,
-    `# ${item.title}
+    `# ${item.title} | Things to Do in ${item.location}
 
 ${item.description}
 

@@ -12,10 +12,13 @@ import PrivacyPolicy from "./pages/legal/PrivacyPolicy";
 import TermsConditions from "./pages/legal/TermsConditions";
 import NotFound from "./pages/NotFound";
 import WhatsAppFloat from "./components/layout/WhatsAppFloat";
+import AdSenseGuard from "./components/ads/AdSenseGuard";
+import CookieNotice from "./components/ads/CookieNotice";
 
 export default function App() {
   return (
     <BrowserRouter>
+      <AdSenseGuard />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/activities" element={<Activities />} />
@@ -31,6 +34,7 @@ export default function App() {
         <Route path="*" element={<NotFound />} />
       </Routes>
       <WhatsAppFloat />
+      <CookieNotice />
     </BrowserRouter>
   );
 }

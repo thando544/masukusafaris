@@ -19,6 +19,7 @@ const LINK_HEADER = [
 
 const CONTENT_TYPES = {
   "/robots.txt": "text/plain; charset=utf-8",
+  "/ads.txt": "text/plain; charset=utf-8",
   "/sitemap.xml": "application/xml; charset=utf-8",
   "/auth.md": "text/markdown; charset=utf-8",
   "/llms.txt": "text/plain; charset=utf-8",

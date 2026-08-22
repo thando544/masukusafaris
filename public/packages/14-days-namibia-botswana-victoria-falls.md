@@ -1,4 +1,4 @@
-# 13 Days Namibia, Botswana & Victoria Falls Safari
+# 13 Days Namibia, Botswana & Victoria Falls Safari | Namibia • Botswana • Zimbabwe Safari Package
 
 This 13-day safari takes you across three incredible African countries — Namibia, Botswana, and Zimbabwe. Experience towering dunes in Sossusvlei, coastal charm in Swakopmund, desert wildlife in Etosha, lush Caprivi landscapes, the elephant-rich Chobe National Park, and the breathtaking Victoria Falls. This journey blends adventure, wildlife, culture, and scenic landscapes into one unforgettable African expedition.
 

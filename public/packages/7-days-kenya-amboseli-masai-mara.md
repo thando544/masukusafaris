@@ -1,4 +1,4 @@
-# 7 Days Kenya Amboseli & Masai Mara
+# 7 Days Kenya Amboseli & Masai Mara | Kenya Safari Package
 
 This 7-day safari combines Kenya’s most iconic wildlife destinations into one unforgettable journey. From the elephant-rich plains of Amboseli beneath Mount Kilimanjaro to the flamingos and rhinos of Lake Nakuru and the endless wildlife-filled grasslands of the Masai Mara, this itinerary is designed for travelers who want a complete East African safari experience with varied landscapes and exceptional game viewing.
 

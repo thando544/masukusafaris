@@ -1,4 +1,4 @@
-# Chobe Full Day Trip
+# Chobe Full Day Trip | Things to Do in Chobe National Park, Botswana
 
 Spend a full day exploring Chobe National Park, known for its elephants, river wildlife, and amazing safari experiences.
 

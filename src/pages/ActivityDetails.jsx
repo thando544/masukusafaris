@@ -4,6 +4,7 @@ import Navbar from "../components/layout/Navbar";
 import Footer from "../components/layout/Footer";
 import BookingForm from "../components/booking/BookingForm";
 import HeroBanner from "../components/layout/HeroBanner";
+import SEO, { tourJsonLd } from "../components/seo/SEO";
 
 export default function ActivityDetails() {
   const { slug } = useParams();
@@ -12,6 +13,12 @@ export default function ActivityDetails() {
   if (!selectedActivity) {
     return (
       <div className="min-h-screen bg-white text-zinc-900">
+        <SEO
+          title="Activity not found"
+          description="That activity is not available. Browse things to do in Victoria Falls and Chobe."
+          path={`/activities/${slug}`}
+          robots="noindex, follow"
+        />
         <Navbar />
         <main className="mx-auto max-w-7xl px-4 py-32 md:px-6 lg:px-8">
           <h1 className="text-3xl font-semibold">Activity not found</h1>
@@ -32,12 +39,23 @@ export default function ActivityDetails() {
 
   return (
     <div className="bg-white text-zinc-900">
+      <SEO
+        title={`${selectedActivity.title} | Things to Do in ${selectedActivity.location}`}
+        description={
+          selectedActivity.shortDescription ||
+          `${selectedActivity.title} in ${selectedActivity.location}.`
+        }
+        path={`/activities/${selectedActivity.slug}`}
+        image={selectedActivity.image}
+        type="article"
+        jsonLd={tourJsonLd(selectedActivity, "activity")}
+      />
       <Navbar />
 
       <main>
         <HeroBanner
           src={selectedActivity.image}
-          alt={selectedActivity.title}
+          alt={`${selectedActivity.title} in ${selectedActivity.location}`}
           className="min-h-[75vh]"
         >
           <div className="max-w-3xl text-white">

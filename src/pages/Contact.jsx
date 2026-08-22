@@ -4,11 +4,19 @@ import InquiryForm from "../components/common/InquiryForm";
 import { SITE } from "../config/site";
 import { FaEnvelope, FaMapMarkerAlt, FaPhoneAlt, FaWhatsapp } from "react-icons/fa";
 import HeroBanner from "../components/layout/HeroBanner";
+import SEO from "../components/seo/SEO";
+import ReferralBanner from "../components/common/ReferralBanner";
 
 export default function Contact() {
   return (
     <div className="bg-[#f6f1e8] text-zinc-900">
+      <SEO
+        title="Contact a Victoria Falls Safari Operator"
+        description={`Speak to Masuku Adventure Safaris in ${SITE.location}. Email ${SITE.email} or WhatsApp ${SITE.phone} to book safari packages, activities, and transfers.`}
+        path="/contact"
+      />
       <Navbar />
+      <ReferralBanner />
 
       <main>
         <HeroBanner

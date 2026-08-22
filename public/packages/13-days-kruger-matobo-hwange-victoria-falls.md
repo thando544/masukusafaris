@@ -1,4 +1,4 @@
-# 13 Days Kruger, Matobo, Hwange & Victoria Falls
+# 13 Days Kruger, Matobo, Hwange & Victoria Falls | South Africa • Zimbabwe • Botswana Safari Package
 
 This 13-day safari takes you on a breathtaking journey across Southern Africa. Starting in the wildlife-rich Manyeleti Private Game Reserve in the Greater Kruger ecosystem, you’ll experience close encounters with the Big Five. The journey continues into Zimbabwe’s Matobo National Park and Hwange National Park, known for dramatic landscapes and abundant wildlife. Finally, you’ll explore the world-famous Victoria Falls and enjoy a full-day safari adventure in Chobe National Park. This itinerary blends luxury, adventure, and authentic African experiences into one seamless journey.
 

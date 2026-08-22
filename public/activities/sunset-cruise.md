@@ -1,4 +1,4 @@
-# Sunset Cruise
+# Sunset Cruise | Things to Do in Zambezi River
 
 A sunset cruise is a calm and scenic experience perfect for enjoying the natural beauty of the area in a relaxed atmosphere.
 

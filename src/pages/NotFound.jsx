@@ -3,10 +3,17 @@ import Navbar from "../components/layout/Navbar";
 import Footer from "../components/layout/Footer";
 import { SITE } from "../config/site";
 import HeroBanner from "../components/layout/HeroBanner";
+import SEO from "../components/seo/SEO";
 
 export default function NotFound() {
   return (
     <div className="min-h-screen bg-[#f6f1e8] text-zinc-900">
+      <SEO
+        title="Page not found"
+        description="This page does not exist. Browse African safari packages and Victoria Falls activities from Masuku Adventure Safaris."
+        path="/404"
+        robots="noindex, follow"
+      />
       <Navbar />
       <main>
         <HeroBanner

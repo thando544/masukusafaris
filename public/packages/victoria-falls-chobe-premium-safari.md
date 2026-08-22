@@ -1,4 +1,4 @@
-# Victoria Falls & Chobe Premium Safari
+# Victoria Falls & Chobe Premium Safari | Zimbabwe / Zambia / Botswana Safari Package
 
 This luxury short safari begins at Victoria Falls and blends natural beauty, culture, and wildlife into one seamless journey. Guests enjoy stylish accommodation, a Zambezi sunset cruise, guided experiences on both the Zimbabwean and Zambian sides of Victoria Falls, a Livingstone city tour, a night game drive, and a full-day Chobe safari.
 

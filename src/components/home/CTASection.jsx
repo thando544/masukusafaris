@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { SITE } from "../../config/site";
 
 export default function CTASection() {
   return (
@@ -7,20 +8,30 @@ export default function CTASection() {
         <div className="rounded-3xl bg-zinc-950 px-8 py-14 text-white md:px-12">
           <div className="max-w-3xl">
             <h2 className="text-3xl font-semibold md:text-5xl">
-              Make room for adventure.
+              Ready to book an African safari?
             </h2>
             <p className="mt-5 text-base leading-8 text-zinc-300">
-              Ready to embark on an unforgettable adventure? Contact Masuku
-              Adventure Safaris today and let us create the perfect itinerary
-              for your dream trip.
+              Tell us your dates and we will confirm lodge space, park fees, and
+              transfers for Victoria Falls, Botswana, East Africa, or a custom
+              crossing. WhatsApp is the fastest way to start.
             </p>
 
-            <Link
-              to="/book"
-              className="mt-8 inline-flex rounded-xl bg-amber-500 px-6 py-3 text-sm font-semibold text-black transition hover:bg-amber-400"
-            >
-              Book Now
-            </Link>
+            <div className="mt-8 flex flex-wrap gap-3">
+              <Link
+                to="/book"
+                className="inline-flex rounded-xl bg-amber-500 px-6 py-3 text-sm font-semibold text-black transition hover:bg-amber-400"
+              >
+                Book a Package
+              </Link>
+              <a
+                href={SITE.whatsapp}
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex rounded-xl border border-white/20 px-6 py-3 text-sm font-semibold text-white transition hover:bg-white/10"
+              >
+                WhatsApp Us
+              </a>
+            </div>
           </div>
         </div>
       </div>

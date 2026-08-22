@@ -1,4 +1,4 @@
-# Night Game Drive and Bush Dinner
+# Night Game Drive and Bush Dinner | Things to Do in Victoria Falls
 
 This package combines an exciting evening game drive with a special bush dinner for a truly unforgettable safari night.
 

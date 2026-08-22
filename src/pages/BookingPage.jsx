@@ -8,6 +8,8 @@ import { SITE } from "../config/site";
 import { FaEnvelope, FaPhoneAlt, FaWhatsapp } from "react-icons/fa";
 import Photo from "../components/common/Photo";
 import HeroBanner from "../components/layout/HeroBanner";
+import SEO from "../components/seo/SEO";
+import ReferralBanner from "../components/common/ReferralBanner";
 
 export default function BookingPage() {
   const [bookingType, setBookingType] = useState("package");
@@ -29,12 +31,18 @@ export default function BookingPage() {
 
   return (
     <div className="bg-white text-zinc-900">
+      <SEO
+        title="Book an African Safari Package or Victoria Falls Activity"
+        description="Request a booking for a Victoria Falls safari package, Chobe day trip, Okavango itinerary, or activity. A planner replies with availability and next steps."
+        path="/book"
+      />
       <Navbar />
+      <ReferralBanner />
 
       <main>
         <HeroBanner
           src="/images/walking.jpeg"
-          alt="Safari sunrise"
+          alt="Book an African safari from Victoria Falls"
           className="min-h-[60vh]"
         >
           <div className="max-w-3xl text-white">
@@ -42,11 +50,11 @@ export default function BookingPage() {
                 Reservations
               </p>
               <h1 className="text-4xl font-semibold md:text-6xl">
-                Book Your Experience
+                Book a safari package or Victoria Falls activity
               </h1>
               <p className="mt-5 max-w-2xl text-base leading-8 text-white/85 md:text-lg">
-                Send your booking request for accommodation packages or activities.
-                Our team will review your request and get back to you directly.
+                Choose a current package or activity, send dates and party size,
+                and we confirm lodge space, park fees, and transfers. {SITE.replyTime}
               </p>
             </div>
         </HeroBanner>

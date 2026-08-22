@@ -11,6 +11,8 @@ import {
   FaShieldAlt,
   FaUsers,
 } from "react-icons/fa";
+import SEO from "../components/seo/SEO";
+import ReviewsPresence from "../components/home/ReviewsPresence";
 
 const values = [
   {
@@ -51,21 +53,26 @@ const highlights = [
 export default function About() {
   return (
     <div className="bg-[#fcfaf6] text-zinc-900">
+      <SEO
+        title="About Masuku Adventure Safaris | Victoria Falls Safari Operator"
+        description="Masuku Adventure Safaris is a Victoria Falls, Zimbabwe safari operator planning packages and activities across Zimbabwe, Botswana, Zambia, Tanzania, Kenya, Namibia, and South Africa."
+        path="/about"
+      />
       <Navbar />
 
       <main>
-        <HeroBanner src="/images/hero.jpg" alt="Masuku Adventure Safaris" className="min-h-[72vh]">
+        <HeroBanner src="/images/hero.jpg" alt="Victoria Falls safari operator Masuku Adventure Safaris" className="min-h-[72vh]">
           <div className="max-w-4xl text-white">
               <p className="mb-4 text-xs font-semibold uppercase tracking-[0.28em] text-white/75">
-                About Masuku Adventure Safaris
+                Local operator in Victoria Falls, Zimbabwe
               </p>
               <h1 className="text-4xl font-semibold leading-tight md:text-6xl lg:text-7xl">
-                Journeys Across Africa, Crafted With Care
+                An African safari company based at the Falls
               </h1>
               <p className="mt-6 max-w-2xl text-base leading-8 text-white/85 md:text-lg">
-                We create safari experiences that go beyond sightseeing — blending
-                wildlife, landscapes, culture, and comfort into journeys travelers
-                remember for a lifetime.
+                We plan the packages we sell: Victoria Falls and Chobe, Okavango
+                Delta, Hwange and Matobo, Tanzania, Kenya, Namibia, and Kruger —
+                with lodges, guiding, and transfers handled from Zimbabwe.
               </p>
             </div>
         </HeroBanner>
@@ -203,6 +210,8 @@ export default function About() {
             </div>
           </div>
         </section>
+
+        <ReviewsPresence />
 
         <section className="pb-20 md:pb-24">
           <div className="mx-auto max-w-7xl px-4 md:px-6 lg:px-8">

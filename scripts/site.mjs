@@ -12,5 +12,5 @@ export const SITE = {
   whatsapp: "https://wa.me/263782856955",
   location: "Victoria Falls, Zimbabwe",
   description:
-    "Curated safari packages, activities, and transfers across Zimbabwe, Botswana, Zambia, Tanzania, Kenya, Namibia, and South Africa.",
+    "Book African safari packages from Victoria Falls: Zimbabwe, Botswana, Zambia, Tanzania, Kenya, Namibia, and South Africa. Local operator for Chobe, Okavango, Hwange, Great Migration, and Masai Mara trips.",
 };

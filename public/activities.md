@@ -1,4 +1,4 @@
-# Activities and experiences
+# Things to do in Victoria Falls and Chobe
 
 ## [Elephant and Cheetah Experience](https://masukusafaris.com/activities/elephant-and-cheetah-experience)
 

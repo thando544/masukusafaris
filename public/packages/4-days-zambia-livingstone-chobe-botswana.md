@@ -1,4 +1,4 @@
-# 4 Days Zambia Livingstone & Chobe Nat Park Botswana
+# 4 Days Zambia Livingstone & Chobe Nat Park Botswana | Zambia / Botswana Safari Package
 
 This short southern Africa safari is ideal for travelers who want to experience the beauty of Livingstone, the majesty of Victoria Falls, and the wildlife richness of Chobe National Park in one seamless journey. From a relaxing sunset cruise on the Zambezi River to guided touring and classic Chobe safari activities, this package offers a memorable mix of scenery, wildlife, and adventure.
 

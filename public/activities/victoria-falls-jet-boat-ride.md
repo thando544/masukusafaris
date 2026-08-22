@@ -1,4 +1,4 @@
-# Victoria Falls Jet Boat Ride
+# Victoria Falls Jet Boat Ride | Things to Do in Victoria Falls
 
 Feel the thrill of speed and adventure with a jet boat ride that adds excitement to your Victoria Falls experience.
 

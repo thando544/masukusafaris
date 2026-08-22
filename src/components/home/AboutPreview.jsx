@@ -1,4 +1,5 @@
 import Photo from "../common/Photo";
+import { SITE } from "../../config/site";
 
 export default function AboutPreview() {
   return (
@@ -16,12 +17,10 @@ export default function AboutPreview() {
         <div className="grid gap-10 lg:grid-cols-2">
           <div className="space-y-6 text-base leading-8 text-zinc-600">
             <p>
-              At Masuku Adventure Safaris, we transform your journey into an
-              extraordinary adventure with our carefully curated experiences.
-              Whether you're marveling at the stunning Victoria Falls, embarking
-              on a thrilling Chobe safari, or exploring the cultural richness of
-              Livingstone, our expert team ensures every moment is
-              unforgettable.
+              We are a Victoria Falls safari operator. Guests come for Falls
+              tours and Chobe day trips, then stay on for Okavango, Hwange,
+              Tanzania, or Kenya packages. We arrange lodges, guiding, and
+              transfers so the itinerary you book is the one you travel.
             </p>
             <p>
               We handle all the details, offering seamless transfers and
@@ -41,7 +40,7 @@ export default function AboutPreview() {
               We’re a trusted tour operator delivering safe, unforgettable
               safaris, proudly registered on{" "}
               <a
-                href="https://safaribookings.com"
+                href={SITE.safariBookings}
                 target="_blank"
                 rel="noreferrer"
                 className="font-medium text-zinc-900 underline"

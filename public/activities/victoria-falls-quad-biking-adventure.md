@@ -1,4 +1,4 @@
-# Victoria Falls Quad Biking Adventure
+# Victoria Falls Quad Biking Adventure | Things to Do in Victoria Falls
 
 Quad biking is a great way to add off-road excitement to your stay while exploring rugged surroundings in a thrilling way.
 

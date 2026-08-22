@@ -1,4 +1,4 @@
-# 7 Days Tanzania Great migration & Ngorongoro Crater
+# 7 Days Tanzania Great migration & Ngorongoro Crater | Tanzania Safari Package
 
 This safari is designed for travelers seeking a complete wildlife journey through some of East Africa’s most celebrated safari settings. Expect dramatic scenery, extraordinary game viewing, memorable lodge stays, and immersive safari moments guided by professionals throughout the journey.
 

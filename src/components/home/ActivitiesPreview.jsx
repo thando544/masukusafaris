@@ -9,15 +9,15 @@ export default function ActivitiesPreview() {
         <div className="mb-12 flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
           <div className="max-w-3xl">
             <p className="mb-3 text-xs font-semibold uppercase tracking-[0.28em] text-amber-700">
-              Signature Experiences
+              Things to do in Victoria Falls
             </p>
             <h2 className="text-3xl font-semibold tracking-tight text-zinc-950 md:text-5xl">
-              Activities & Adventures
+              Falls tours, Chobe day trips & adventure
             </h2>
             <p className="mt-4 text-base leading-8 text-zinc-600 md:text-lg">
-              Discover unforgettable wildlife encounters, scenic adventures, and
-              guided experiences designed to make your journey through Victoria
-              Falls and beyond truly memorable.
+              Add a guided Falls walk, sunset cruise, Chobe full-day safari,
+              rafting, or wildlife encounter to any package. These are the
+              activities we operate from Victoria Falls.
             </p>
           </div>
 

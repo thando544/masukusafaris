@@ -1,4 +1,4 @@
-# Tour The Victoria Falls (Zimbabwe & Zambia Combined)
+# Tour The Victoria Falls (Zimbabwe & Zambia Combined) | Things to Do in Victoria Falls / Livingstone
 
 See Victoria Falls from both Zimbabwe and Zambia for a fuller and more memorable view of one of the world’s natural wonders.
 

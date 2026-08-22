@@ -1,4 +1,4 @@
-# 9 Days Around Zimbabwe
+# 9 Days Around Zimbabwe | Zimbabwe Safari Package
 
 This 9-day Zimbabwe safari is ideal for travelers who want to experience the country’s cultural heritage, dramatic landscapes, iconic wildlife areas, and world-famous Victoria Falls in one complete journey. From Harare and Great Zimbabwe to the granite hills of Matobo, the wildlife-rich plains of Hwange, and the beauty of Victoria Falls, this package blends history, nature, and adventure into one memorable itinerary.
 
